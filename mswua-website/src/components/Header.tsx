@@ -1,10 +1,11 @@
 import "./Header.css";
+import LogoImage from "../assets/images/mswua-logo.svg";
 
 export function Header() {
   return (
     <>
       <header>
-        <div className="logo"></div>
+        <img src={LogoImage} alt="logo image" className="logo" />
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
