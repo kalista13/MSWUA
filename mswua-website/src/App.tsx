@@ -1,10 +1,12 @@
 import './App.css'
 import {Header} from './components/Header.tsx';
+import LogoImage from './assets/images/mswua-logo.svg';
 
 function App() {
 
   return (
     <>
+      <link rel="icon" type="image/svg+xml" href={LogoImage} />
       <Header/>
     </>
   )
