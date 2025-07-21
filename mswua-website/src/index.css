@@ -13,13 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100;
+
+}
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--bg-gradient-1);
+  color: var(--dark-color);
 }
 
 body {

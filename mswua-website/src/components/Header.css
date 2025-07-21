@@ -10,6 +10,7 @@ header {
   height: 100px;
   background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-2), var(--header-gradient-3));
   opacity: 80%;
+  z-index: 1;
 }
 
 ul {
@@ -17,7 +18,7 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin-right: 40px;
 }
 
