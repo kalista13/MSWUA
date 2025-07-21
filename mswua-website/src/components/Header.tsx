@@ -1,4 +1,5 @@
-import "./Header.css";
+import './Header.css';
+import './Theme.css';
 import LogoImage from "../assets/images/mswua-logo.svg";
 
 export function Header() {

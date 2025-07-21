@@ -1,5 +1,6 @@
 import './App.css'
-import {Header} from './components/Header.tsx';
+import './Theme.css'
+import { Header } from './components/Header.tsx';
 import LogoImage from './assets/images/mswua-logo.svg';
 
 function App() {

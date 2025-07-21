@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-2), var(--header-gradient-3));
+  opacity: 80%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+a {
+  color: white;
+  font-family: 'Italiana', Arial;
+}
+
+.logo {
+  width: clamp(20px, 5vw, 80px);
+  height: clamp(20px, 5vw, 80px);
+}
