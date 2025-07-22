@@ -31,3 +31,25 @@ a {
   width: clamp(20px, 5vw, 80px);
   height: clamp(20px, 5vw, 80px);
 }
+
+.header-text li a {
+  position: relative;
+  display: inline-block;
+}
+
+.header-text li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--highlight-gradient-2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.header-text li a:hover::after {
+  transform: scaleX(1);
+}
