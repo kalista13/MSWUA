@@ -68,3 +68,7 @@
   height: auto;
   margin: 0px 50px 110px 50px;
 }
+
+.home-logo:hover {
+  filter: drop-shadow(0 0 1em var(--highlight-gradient-2));
+}
