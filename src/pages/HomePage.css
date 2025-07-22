@@ -38,6 +38,7 @@
 .info {
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
   gap: 20px;
   position: relative;
 }
@@ -66,9 +67,72 @@
 .home-logo {
   width: clamp(100px, 12vw, 200px);
   height: auto;
-  margin: 0px 50px 110px 50px;
+  margin: 0px 50px 50px 50px;
+  transition: filter 0.4s ease;
 }
 
 .home-logo:hover {
   filter: drop-shadow(0 0 1em var(--highlight-gradient-2));
+}
+
+.separator {
+  width: 100vw;
+  height: 1px;
+  background-color: white;
+}
+
+#about-us {
+  width: 100vw;
+  height: 140vh;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  background-image: url(../assets/images/bg-about.svg);
+  background-size: cover;
+}
+
+.about-header {
+  color: var(--highlight-gradient-1);
+  font-family: 'Italiana', Arial;
+}
+
+.text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50vw;
+  max-height: 50vw;
+  overflow: auto;
+}
+
+.about-header {
+  font-size: 4rem;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  text-align: left;
+  width: 80%;
+}
+
+.image-holder {
+  position: relative;
+  width: clamp(100px, 50vw, 800px);
+  height: clamp(100px, 60%, 800px);
+  margin-right: 40px;
+  background-color: var(--bg-gradient-4)
+}
+
+.image-holder img {
+  position: absolute;
+  bottom: -100px;
+  right: -80px;
 }
