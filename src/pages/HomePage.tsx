@@ -6,6 +6,7 @@ import sponsor1 from '../assets/images/sponsors/sponsor-engineer.svg';
 import sponsor2 from '../assets/images/sponsors/sponsor-sed-eeds.svg';
 import sponsor3 from '../assets/images/sponsors/sponsor-ap!rg.svg';
 import sponsor4 from '../assets/images/sponsors/sponsor-rockaboo.svg';
+import aboutUsVid from '../assets/videos/about-us.mp4';
 
 export function HomePage () {
   return (
@@ -33,9 +34,13 @@ export function HomePage () {
             <p className="about-text">Mission SpaceWalker (MSW) was established as a student club in 2022 and participated as the first all-women group in the Canadian Reduced Gravity Experiment (CAN-RGX). Whether they are floating in microgravity, experimenting on stratospheric balloons, or on their glacial analog mission,  the team works hard to propel Canadian space research and diversify the space industry.</p>
           </div>
           <div className="image-holder">
+            <video src={aboutUsVid} muted autoPlay loop playsInline></video>
             <img src={planetImage} alt="planet icon" />
           </div>
         </div>
+
+        <div className="sponsor-tab">
+          <h1>Sponsors</h1></div>
 
         <div className="sponsor-section">
           <div className="sponsor-bg">

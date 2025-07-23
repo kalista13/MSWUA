@@ -82,6 +82,7 @@
 }
 
 #about-us {
+  position: relative;
   width: 100vw;
   height: 140vh;
 }
@@ -125,16 +126,21 @@
 
 .image-holder {
   position: relative;
-  width: clamp(100px, 50vw, 800px);
-  height: clamp(100px, 60%, 800px);
+  width: clamp(100px, 50vw, 700px);
+  height: clamp(100px, 48%, 800px);
   margin-right: 40px;
-  background-color: var(--bg-gradient-4);
 }
 
 .image-holder img {
   position: absolute;
   bottom: -100px;
   right: -80px;
+}
+
+.image-holder video {
+  width: 100%;
+  height: fit-content;
+  border: 10px solid var(--bg-gradient-4);
 }
 
 .sponsor-section {
@@ -150,6 +156,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
   width: clamp(100px, 90vw, 2000px);
   height: 50%;
   background-image: url(../assets/images/bg-sponsor.svg);
@@ -161,6 +168,22 @@
 }
 
 .sponsor-bg img {
-  width: clamp(100px, 20vw, 350px);
-  height: clamp(100px, 20vh, 350px);
+  width: clamp(100px, 20vw, 240px);
+  height: clamp(100px, 20vh, 250px);
+}
+
+.sponsor-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: clamp(200px, 30vw, 700px);
+  height: clamp(20px, 9vh, 100px);
+  background: linear-gradient(to right, var(--highlight-gradient-1), var(--highlight-gradient-2));
+  top: 58%;
+}
+
+.sponsor-tab h1 {
+  font-size: 3.2rem;
+  font-family: 'Italiana', Arial;
 }
