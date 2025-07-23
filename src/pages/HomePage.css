@@ -38,6 +38,7 @@
 .info {
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
   gap: 20px;
   position: relative;
 }
@@ -66,5 +67,123 @@
 .home-logo {
   width: clamp(100px, 12vw, 200px);
   height: auto;
-  margin: 0px 50px 110px 50px;
+  margin: 0px 50px 50px 50px;
+  transition: filter 0.4s ease;
+}
+
+.home-logo:hover {
+  filter: drop-shadow(0 0 1em var(--highlight-gradient-2));
+}
+
+.separator {
+  width: 100vw;
+  height: 1px;
+  background-color: white;
+}
+
+#about-us {
+  position: relative;
+  width: 100vw;
+  height: 140vh;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  background-image: url(../assets/images/bg-about.svg);
+  background-size: cover;
+}
+
+.about-header {
+  color: var(--highlight-gradient-1);
+  font-family: 'Italiana', Arial;
+}
+
+.text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50vw;
+  max-height: 50vw;
+  overflow: auto;
+}
+
+.about-header {
+  font-size: 4rem;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  text-align: left;
+  width: 80%;
+}
+
+.image-holder {
+  position: relative;
+  width: clamp(100px, 50vw, 700px);
+  height: clamp(100px, 48%, 800px);
+  margin-right: 40px;
+}
+
+.image-holder img {
+  position: absolute;
+  bottom: -100px;
+  right: -80px;
+}
+
+.image-holder video {
+  width: 100%;
+  height: fit-content;
+  border: 10px solid var(--bg-gradient-4);
+}
+
+.sponsor-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 55vh;
+  background-color: var(--bg-gradient-4);
+}
+
+.sponsor-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: clamp(100px, 90vw, 2000px);
+  height: 50%;
+  background-image: url(../assets/images/bg-sponsor.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-top: 50px
+}
+
+.sponsor-bg img {
+  width: clamp(100px, 20vw, 240px);
+  height: clamp(100px, 20vh, 250px);
+}
+
+.sponsor-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: clamp(200px, 30vw, 700px);
+  height: clamp(20px, 9vh, 100px);
+  background: linear-gradient(to right, var(--highlight-gradient-1), var(--highlight-gradient-2));
+  top: 58%;
+}
+
+.sponsor-tab h1 {
+  font-size: 3.2rem;
+  font-family: 'Italiana', Arial;
 }
