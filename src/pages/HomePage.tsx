@@ -8,6 +8,7 @@ import sponsor3 from '../assets/images/sponsors/sponsor-ap!rg.svg';
 import sponsor4 from '../assets/images/sponsors/sponsor-rockaboo.svg';
 import aboutUsVid from '../assets/videos/about-us.mp4';
 import EventBoxes from '../assets/images/event-boxes.png';
+import ExploreBoxes from '../assets/images/explore-boxes.svg';
 
 export function HomePage () {
   return (
@@ -62,21 +63,34 @@ export function HomePage () {
             <h1>Fall Clubs Fair ‘25</h1>
             <p>TBA</p>
             <p className="event-description">Stop by the Mission SpaceWalker table at the Clubs Fair! Meet our members, learn about the cool projects we’re working on and find out how you can get involved. We’ve got a place for you!</p>
-            <button className="info-button">info</button>
+            <button className="info-button">i n f o</button>
             <img src={EventBoxes} alt="event box" draggable="false"/>
           </div>
           <div className="event-boxes">
             <h1>AGM '25</h1>
             <p>TBA</p>
             <p className="event-description">Join us for our biggest meeting of the year! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
-            <button className="rvsp-button">rvsp</button>
+            <button className="rvsp-button">r v s p</button>
             <img src={EventBoxes} alt="event box" draggable="false"/>
           </div>
         </div>
       </section>
 
       <section id="explore">
+        <div className="team-section">
+          <img src={ExploreBoxes} alt="explore boxes" className="explore-box" />
+          <button className="team-button">meet the team</button>
+        </div>
 
+        <div className="project-section">
+           <img src={ExploreBoxes} alt="explore boxes" className="explore-box"/>
+           <button className="explore-button">explore projects</button>
+        </div>
+
+        <div className="involve-section">
+          <img src={ExploreBoxes} alt="explore boxes" className="explore-box" />
+          <button className="involve-button">get involved</button>
+        </div>
       </section>
     </>
   )
