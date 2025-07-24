@@ -7,6 +7,7 @@ import sponsor2 from '../assets/images/sponsors/sponsor-sed-eeds.svg';
 import sponsor3 from '../assets/images/sponsors/sponsor-ap!rg.svg';
 import sponsor4 from '../assets/images/sponsors/sponsor-rockaboo.svg';
 import aboutUsVid from '../assets/videos/about-us.mp4';
+import EventBoxes from '../assets/images/event-boxes.png';
 
 export function HomePage () {
   return (
@@ -62,14 +63,20 @@ export function HomePage () {
             <p>TBA</p>
             <p className="event-description">Stop by the Mission SpaceWalker table at the Clubs Fair! Meet our members, learn about the cool projects we’re working on and find out how you can get involved. We’ve got a place for you!</p>
             <button className="info-button">info</button>
+            <img src={EventBoxes} alt="event box" draggable="false"/>
           </div>
           <div className="event-boxes">
             <h1>AGM '25</h1>
             <p>TBA</p>
             <p className="event-description">Join us for our biggest meeting of the year! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
             <button className="rvsp-button">rvsp</button>
+            <img src={EventBoxes} alt="event box" draggable="false"/>
           </div>
         </div>
+      </section>
+
+      <section id="explore">
+
       </section>
     </>
   )

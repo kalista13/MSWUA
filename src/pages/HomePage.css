@@ -214,10 +214,17 @@ h1 {
   flex-direction: column; 
   align-items: center;
   gap: 20px;
-  width: 427px;
-  height: 420px;
-  background-image: url(../assets/images/event-boxes.png);
-  background-repeat: no-repeat;
+  width: clamp(100px, 40vw, 427px);
+  height: clamp(100px, 40vw, 420px);
+  overflow: auto;
+}
+
+.event-boxes img {
+  width: clamp(100px, 40vw, 427px);
+  height: clamp(100px, 40vw, 420px);
+  position: absolute;
+  z-index: 0;
+  object-fit: contain;
 }
 
 .event-boxes h1 {
@@ -230,9 +237,20 @@ h1 {
   width: 300px;
 }
 
+.event-boxes h1,
+.event-boxes p,
+.event-boxes button {
+  z-index: 1;
+}
+
 .info-button,
 .rvsp-button {
   background: linear-gradient(to right, var(--highlight-gradient-1-opaque), var(--highlight-gradient-2-opaque));
   border: 1px solid var(--highlight-color);
   border-radius: 4px;
+}
+
+#explore {
+  width: 100vw;
+  height: 60vh;
 }
