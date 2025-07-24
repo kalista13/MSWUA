@@ -51,6 +51,26 @@ export function HomePage () {
           </div>
         </div>
       </section>
+
+      <div className="separator"></div>
+
+      <section id="events">
+        <h1>E V E N T S</h1>
+        <div className="event-box-section">
+          <div className="event-boxes">
+            <h1>Fall Clubs Fair ‘25</h1>
+            <p>TBA</p>
+            <p className="event-description">Stop by the Mission SpaceWalker table at the Clubs Fair! Meet our members, learn about the cool projects we’re working on and find out how you can get involved. We’ve got a place for you!</p>
+            <button className="info-button">info</button>
+          </div>
+          <div className="event-boxes">
+            <h1>AGM '25</h1>
+            <p>TBA</p>
+            <p className="event-description">Join us for our biggest meeting of the year! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
+            <button className="rvsp-button">rvsp</button>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
