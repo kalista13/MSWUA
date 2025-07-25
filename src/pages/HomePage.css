@@ -2,12 +2,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../assets/images/background/background.png);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  background-color: black;
 }
 
 #home, 
@@ -75,12 +75,6 @@
   filter: drop-shadow(0 0 1em var(--highlight-gradient-2));
 }
 
-.separator {
-  width: 100vw;
-  height: 1px;
-  background-color: var(--highlight-color);
-}
-
 #about-us {
   position: relative;
   width: 100vw;
@@ -95,7 +89,7 @@
   height: 85vh;
   box-sizing: border-box;
   padding: 40px 60px;
-  background-image: url(../assets/images/background/bg-about.svg);
+  background: black;
   background-size: cover;
 }
 

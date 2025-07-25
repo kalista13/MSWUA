@@ -31,7 +31,7 @@ export function HomePage () {
         </div>
       </section>
 
-      <div className="separator"></div>
+
 
       <section id="about-us">
         <div className="about-section">
