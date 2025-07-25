@@ -1,0 +1,23 @@
+footer {
+  width: 100vw;
+  height: fit-content;
+  background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-2), var(--header-gradient-3));
+}
+
+.location-section,
+.follow-section {
+  text-align: left;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  font-family: 'Italiana', Arial;
+}
+
+footer span {
+  font-family: 'Inter', Arial;
+}

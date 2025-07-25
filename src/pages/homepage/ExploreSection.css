@@ -1,0 +1,44 @@
+#explore {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(10px, 5vw, 50px);
+  width: 100vw;
+  padding: 50px 0;
+  height: 60vh;
+  background-color: var(--bg-color);
+}
+
+.team-section, 
+.project-section,
+.involve-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: clamp(100px, 40vw, 400px);
+  height: clamp(100px, 40vh, 380px);
+}
+
+.team-section img, 
+.project-section img,
+.involve-section img {
+  width: clamp(50px, 30vw, 400px);
+  height: clamp(50px, 40vh, 380px);
+  position: absolute;
+  z-index: 0;
+  object-fit: contain;
+}
+
+.team-button,
+.explore-button,
+.involve-button {
+  background: linear-gradient(to right, var(--highlight-gradient-1-opaque), var(--highlight-gradient-2-opaque));
+  border: 1px solid var(--highlight-color);
+  border-radius: 4px;
+  font-family: 'Italiana', Arial;
+  z-index: 1;
+  width: fit-content;
+}
