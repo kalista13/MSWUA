@@ -1,7 +1,4 @@
 import './HomePage.css';
-import quoteText from '../assets/images/quote-text.svg';
-import LogoImage from '../assets/images/mswua-logo.svg';
-import planetImage from '../assets/images/planet-icon.svg';
 import sponsor1 from '../assets/images/sponsors/sponsor-engineer.svg';
 import sponsor2 from '../assets/images/sponsors/sponsor-sed-eeds.svg';
 import sponsor3 from '../assets/images/sponsors/sponsor-ap!rg.svg';
@@ -18,20 +15,17 @@ export function HomePage () {
   return (
     <>
       <section id="home">
+        
         <div className="bg-overlay">
           <div className="info">
-            <img className="inspo-quote" draggable="false" src={quoteText} alt="quote text" />
             <p>A University of Alberta Space Exploration & <br/> <span className="left-text">Research Team</span></p>
             <div className="buttons">
               <button className="join-button">join us</button>
               <button className="about-button">our mission</button>
             </div>
           </div>
-          <img src={LogoImage} alt="logo image" className="home-logo" />
         </div>
       </section>
-
-      <div className="separator"></div>
 
       <section id="about-us">
         <div className="about-section">
@@ -41,12 +35,8 @@ export function HomePage () {
           </div>
           <div className="image-holder">
             <video src={aboutUsVid} muted autoPlay loop playsInline></video>
-            <img src={planetImage} alt="planet icon" />
           </div>
         </div>
-
-        <div className="sponsor-tab">
-          <h1>Sponsors</h1></div>
 
         <div className="sponsor-section">
           <div className="sponsor-bg">

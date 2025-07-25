@@ -6,7 +6,6 @@ export function Header() {
   return (
     <>
       <header>
-        <img src={LogoImage} alt="logo image" className="logo" />
         <nav>
           <ul className="header-text">
             <li><a href="#home">Home</a></li>
@@ -17,6 +16,7 @@ export function Header() {
             <li><a href="#outreach">Outreach</a></li>
           </ul>
         </nav>
+        <img src={LogoImage} alt="logo image" className="logo" />
       </header>
     </>
   )

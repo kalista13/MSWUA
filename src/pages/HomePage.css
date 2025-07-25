@@ -2,12 +2,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../assets/images/background/background.png);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  background-color: black;
 }
 
 #home, 
@@ -18,7 +18,7 @@
 }
 
 .bg-overlay {
-  justify-content: flex-end;
+  justify-content: center;
   width: 72%;
   height: 100vh;
   background: linear-gradient(
@@ -41,6 +41,13 @@
   margin-top: 70px;
   gap: 20px;
   position: relative;
+  margin-left: 200px;
+}
+
+.info p {
+  width: 500px;
+  text-align: left;
+  font-size: 30px;
 }
 
 .join-button {
@@ -75,12 +82,6 @@
   filter: drop-shadow(0 0 1em var(--highlight-gradient-2));
 }
 
-.separator {
-  width: 100vw;
-  height: 1px;
-  background-color: var(--highlight-color);
-}
-
 #about-us {
   position: relative;
   width: 100vw;
@@ -95,7 +96,7 @@
   height: 85vh;
   box-sizing: border-box;
   padding: 40px 60px;
-  background-image: url(../assets/images/background/bg-about.svg);
+  background: black;
   background-size: cover;
 }
 
@@ -129,12 +130,6 @@
   width: clamp(100px, 50vw, 700px);
   height: clamp(100px, 48%, 800px);
   margin-right: 40px;
-}
-
-.image-holder img {
-  position: absolute;
-  bottom: -100px;
-  right: -80px;
 }
 
 .image-holder video {
@@ -172,17 +167,6 @@
   height: clamp(100px, 20vh, 250px);
 }
 
-.sponsor-tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: clamp(200px, 30vw, 700px);
-  height: clamp(20px, 9vh, 100px);
-  background: linear-gradient(to right, var(--highlight-gradient-1), var(--highlight-gradient-2));
-  top: 58%;
-}
-
 h1 {
   font-size: 3.2rem;
   font-family: 'Italiana', Arial;
@@ -197,10 +181,7 @@ h1 {
   padding: 30px 0;
   width: 100vw;
   height: 80vh;
-  background-position: top;
-  background-image: url(../assets/images/background/bg-events.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .event-box-section {
