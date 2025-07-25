@@ -18,7 +18,7 @@
 }
 
 .bg-overlay {
-  justify-content: flex-end;
+  justify-content: center;
   width: 72%;
   height: 100vh;
   background: linear-gradient(
@@ -41,6 +41,13 @@
   margin-top: 70px;
   gap: 20px;
   position: relative;
+  margin-left: 200px;
+}
+
+.info p {
+  width: 500px;
+  text-align: left;
+  font-size: 30px;
 }
 
 .join-button {
@@ -125,12 +132,6 @@
   margin-right: 40px;
 }
 
-.image-holder img {
-  position: absolute;
-  bottom: -100px;
-  right: -80px;
-}
-
 .image-holder video {
   width: 100%;
   height: fit-content;
@@ -166,17 +167,6 @@
   height: clamp(100px, 20vh, 250px);
 }
 
-.sponsor-tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: clamp(200px, 30vw, 700px);
-  height: clamp(20px, 9vh, 100px);
-  background: linear-gradient(to right, var(--highlight-gradient-1), var(--highlight-gradient-2));
-  top: 58%;
-}
-
 h1 {
   font-size: 3.2rem;
   font-family: 'Italiana', Arial;
@@ -191,10 +181,7 @@ h1 {
   padding: 30px 0;
   width: 100vw;
   height: 80vh;
-  background-position: top;
-  background-image: url(../assets/images/background/bg-events.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .event-box-section {
