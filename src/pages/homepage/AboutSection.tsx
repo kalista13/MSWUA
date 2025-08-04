@@ -1,9 +1,6 @@
 import './AboutSection.css';
-import sponsor1 from '../../assets/images/sponsors/sponsor-engineer.svg';
-import sponsor2 from '../../assets/images/sponsors/sponsor-sed-eeds.svg';
-import sponsor3 from '../../assets/images/sponsors/sponsor-ap!rg.svg';
-import sponsor4 from '../../assets/images/sponsors/sponsor-rockaboo.svg';
 import aboutUsVid from '../../assets/videos/about-us.mp4';
+import { SponsorSection } from './SponsorSection';
 
 export function AboutSection() {
   return (
@@ -19,14 +16,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="sponsor-section">
-          <div className="sponsor-bg">
-            <img className="engineer-sponsor" src={sponsor1} alt="sponsor 1" />
-            <img className="seds-sponsor" src={sponsor2} alt="sponsor 2" />
-            <img className="aprg-sponsor" src={sponsor3} alt="sponsor 3" />
-            <img className="rockaboo-sponsor" src={sponsor4} alt="sponsor 4" />
-          </div>
-        </div>
+        <SponsorSection/>
       </section>
     </>
   )
