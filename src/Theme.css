@@ -10,10 +10,11 @@
   --highlight-gradient-1: #090732;
   --highlight-gradient-2: #270D2E;
   --highlight-gradient-1-opaque: #88BBE066;
-  --highlight-gradient-2-opaque: #D7A9E066;
+  --highlight-gradient-2-opaque: #270D2E66;
   --sponsors-color: #AE79AB;
   --highlight-color: #FFFFFF;
   --dark-color: #070020;
   --secondary-dark-color: #3E3E3E;
   --blue-highlight: #88BBE0;
+  --explore-highlight: #100E42;
 }

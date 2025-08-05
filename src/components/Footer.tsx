@@ -8,6 +8,7 @@ export function Footer() {
   return (
     <>
       <footer>
+        <p></p>
         <div className="footer-info">
           <div className="location-section">
             <p>Our Location: <span>ETLC @UofA</span></p>
@@ -16,14 +17,17 @@ export function Footer() {
           <div className="follow-section">
             <p>Follow Us</p>
             <div className="social-media-icons">
-            <img src={EmailIcon} alt="email icon" />
-            <img src={InstagramIcon} alt="instagram icon" />
-            <img src={TiktokIcon} alt="tiktok icon" />
-            <img src={VscoIcon} alt="vsco icon" />
+              <a href="/">
+                <img src={EmailIcon} alt="email icon" />
+              </a>
+              <a href="https://www.instagram.com/missionspacewalker/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt="instagram icon" /></a>
+              <a href="https://www.tiktok.com/@missionspacewalker" target="_blank" rel="noopener noreferrer"><img src={TiktokIcon} alt="tiktok icon" /></a>
+              <a href="https://vsco.co/missionspacewalker/gallery" target="_blank" rel="noopener noreferrer"><img src={VscoIcon} alt="vsco icon" /></a>
             </div>
           </div>
         </div>
         <div className="separator"></div>
+        <div className="footer-line"></div>
         <p>&copy; Copyright 2025 MSWUA</p>
       </footer>
     </>
