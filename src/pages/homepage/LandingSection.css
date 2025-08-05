@@ -17,6 +17,21 @@
   align-items: center;
 }
 
+.video-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vw;
+  background: rgba(4, 0, 22, 0.39); /* change opacity as needed */
+  background: linear-gradient(
+    to right,
+    #07002000,
+    #08001880,  /* left side: slightly dark */
+    #01000DD4   /* right side: much darker */
+  );
+}
+
 .bg-overlay {
   justify-content: center;
   width: 72%;
@@ -28,6 +43,15 @@
     var(--bg-dark) 55%
   );
   font-family: 'Inter', Arial;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .buttons {
@@ -47,7 +71,7 @@
 .info p {
   width: 500px;
   text-align: left;
-  font-size: 30px;
+  /*font-size: 60px;*/
 }
 
 .join-button {
@@ -66,9 +90,17 @@
   color: var(--highlight-color);
 }
 
-.left-text {
+.mainline {
+  font-family: 'Lexend Giga', sans-serif;
   display: block;
   text-align: left;
+  font-size: 60px;
+}
+
+.subline {
+  display: block;
+  text-align: left;
+  font-size: 18px;
 }
 
 .home-logo {
