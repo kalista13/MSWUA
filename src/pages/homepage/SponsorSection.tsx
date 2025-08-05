@@ -7,7 +7,9 @@ export function SponsorSection() {
   return (
     <>
       <div className="sponsor-section">
-        <div className="sponsor-bg">
+        <p>Sponsors</p>
+        <div className="line"></div>
+        <div className="sponsors">
           <img className="engineer-sponsor" src={sponsor1} alt="sponsor 1" />
           <img className="seds-sponsor" src={sponsor2} alt="sponsor 2" />
           <img className="aprg-sponsor" src={sponsor3} alt="sponsor 3" />

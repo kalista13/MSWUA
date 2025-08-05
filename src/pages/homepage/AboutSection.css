@@ -56,11 +56,19 @@
 
 .sponsor-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(black 19%, var(--blue-highlight) 44%, black 78%);
   width: 100vw;
   height: 55vh;
-  background-color: var(--bg-color);
+  flex-wrap: nowrap;
+}
+
+.line {
+  width: 5rem;
+  height: 2px;
+  background-color: var(--highlight-color);
 }
 
 .sponsor-bg {
@@ -70,10 +78,6 @@
   gap: clamp(5px, 0.5vw, 5px);
   width: clamp(200px, 90vw, 2000px);
   height: 50%;
-  background-image: url(../../assets/images/background/bg-sponsor.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   overflow: hidden;
   margin-top: 50px
 }
@@ -87,6 +91,7 @@
   width: clamp(70px, 10vw, 200px);
   height: clamp(70px, 1vh, 200px);
 }
+
 h1 {
   font-size: 3.2rem;
   font-family: 'Italiana', Arial;
