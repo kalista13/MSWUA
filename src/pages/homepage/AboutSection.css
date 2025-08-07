@@ -54,42 +54,46 @@
   border: 10px solid var(--bg-gradient-4);
 }
 
+.sponsor-text {
+  position: absolute;
+  font-size: 1.1rem;
+  top: clamp(10px, 8vh, 100px);
+}
+
 .sponsor-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(black 19%, var(--blue-highlight) 44%, black 78%);
+  position: relative;
+  background: linear-gradient(var(--sponsor-section-color) 25%, var(--blue-highlight) 50%, var(--sponsor-section-color) 75%);
   width: 100vw;
   height: 55vh;
   flex-wrap: nowrap;
 }
 
 .line {
-  width: 5rem;
+  width: 5.5rem;
   height: 2px;
   background-color: var(--highlight-color);
 }
 
-.sponsor-bg {
+.sponsors {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: clamp(5px, 0.5vw, 5px);
   width: clamp(200px, 90vw, 2000px);
-  height: 50%;
-  overflow: hidden;
-  margin-top: 50px
 }
 
-.sponsor-bg img {
+.sponsors img {
   width: clamp(100px, 20vw, 240px);
   height: clamp(100px, 20vh, 250px);
 }
 
-.engineer-sponsor {
-  width: clamp(70px, 10vw, 200px);
-  height: clamp(70px, 1vh, 200px);
+.sponsors .engineer-sponsor {
+  width: 100px;
+  margin-right: 15px;
 }
 
 h1 {
