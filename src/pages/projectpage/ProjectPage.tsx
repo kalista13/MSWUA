@@ -1,7 +1,10 @@
+import './ProjectPage.css';
 export function ProjectPage () {
   return (
     <>
-      <div id="projects"></div>
+      <div id="projects">
+        
+      </div>
     </>
   )
 }
