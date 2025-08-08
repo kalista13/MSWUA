@@ -7,6 +7,7 @@ export function ExploreSection() {
   return (
     <>
       <section id="explore">
+        <h1>Explore More</h1>
         <div className="team-section">
           <img src={TeamPicture} alt="team picture" />
           <button className="team-button">meet the team</button>
