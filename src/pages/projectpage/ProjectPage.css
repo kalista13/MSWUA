@@ -1,0 +1,70 @@
+#projects {
+  width: 100vw;
+  min-height: 1900px;
+  background-color: black;
+  padding-top: 70px;
+  background: linear-gradient(var(--project-glow)3%, var(--bg-color) 50%, var(--bg-color) 82%, var(--project-glow) 100%);
+}
+
+#projects h1 {
+  padding-top: 100px;
+  font-family: 'Lexend Giga', Arial;
+}
+
+#projects p {
+  padding-top: 7px;
+  padding-bottom: 50px;
+}
+
+.h-line {
+  display: inline-block;
+  background-color: var(--highlight-color);
+  width: 1px;
+  margin: 0 auto;
+}
+
+.line-1 {
+  height: 300px;
+}
+
+.line-2 {
+  background-color: blue;
+  height: 450px;
+}
+
+.line-3 {
+  background-color: purple;
+  height: 450px;
+}
+
+.line-4 {
+  background-color: lightblue;
+  height: 350px;
+}
+
+.line-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.checkpoint-1,
+.checkpoint-2,
+.checkpoint-3 {
+  position: absolute;
+  width: 70px;
+  height: auto;
+}
+
+.checkpoint-1 {
+  top: 275px;
+}
+
+.checkpoint-2 {
+  top: 730px;
+}
+
+.checkpoint-3 {
+  top: 1180px;
+}
