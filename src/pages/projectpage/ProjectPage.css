@@ -4,6 +4,20 @@
   background-color: black;
   padding-top: 70px;
   background: linear-gradient(var(--project-glow)3%, var(--bg-color) 50%, var(--bg-color) 82%, var(--project-glow) 100%);
+  position: relative;
+}
+
+.can-rgx-v {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: calc(50% + 350px);
+  transform: translateX(-50%);
+}
+
+.can-rgx-v h1 {
+  padding: 0;
+  
 }
 
 #projects h1 {
@@ -21,6 +35,7 @@
   background-color: var(--highlight-color);
   width: 1px;
   margin: 0 auto;
+  transform-origin: top;
 }
 
 .line-1 {
@@ -28,12 +43,10 @@
 }
 
 .line-2 {
-  background-color: blue;
   height: 450px;
 }
 
 .line-3 {
-  background-color: purple;
   height: 450px;
 }
 
