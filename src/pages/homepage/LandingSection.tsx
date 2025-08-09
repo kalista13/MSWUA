@@ -1,5 +1,7 @@
 import './LandingSection.css';
-import spaceVideo from '../../assets/videos/about-us.mp4';
+import spaceVideo from '../../assets/videos/mainvideo.mp4';
+import sideimage from '../../assets/images/sideimage.png';
+
 
 export function LandingSection() {
   return (
@@ -10,10 +12,9 @@ export function LandingSection() {
         Your browser does not support the video tag.
       </video>
 
-      {/* NEW: Dark overlay layer */}
+      {/* um what */}
       <div className="video-overlay" />
 
-      {/* Content layer */}
       <div className="bg-overlay">
         <div className="info">
           <div className="mainline">
@@ -28,6 +29,7 @@ export function LandingSection() {
             <button className="about-button">Our Mission</button>
           </div>
         </div>
+        <img src={sideimage} alt="Spacecraft" className="side-image" /> 
       </div>
     </section>
   );

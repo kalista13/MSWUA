@@ -57,6 +57,8 @@
 .buttons {
   display: flex;
   gap: 40px;
+  margin-top: 30px;
+  
 }
 
 .info {
@@ -88,6 +90,7 @@
   width: clamp(40px, 10vw, 150px);
   border-radius: 4px;
   color: var(--highlight-color);
+  font-weight: bold;
 }
 
 .mainline {
@@ -95,12 +98,15 @@
   display: block;
   text-align: left;
   font-size: 60px;
+  font-weight: bold;
+  /*margin-bottom: 0px;*/
 }
 
 .subline {
   display: block;
   text-align: left;
   font-size: 18px;
+  /*margin-bottom: 0px;*/
 }
 
 .home-logo {
@@ -112,4 +118,12 @@
 
 .home-logo:hover {
   filter: drop-shadow(0 0 1em var(--highlight-gradient-2));
+}
+
+.side-image {
+  position: absolute;
+  left: 4%; /* distance from the right side */
+  bottom: 8%; /* adjust vertical position */
+  width: 120px; /* adjust size */
+  max-width: 30%;
 }
