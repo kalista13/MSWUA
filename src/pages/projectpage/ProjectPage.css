@@ -15,6 +15,11 @@
   transform: translateX(-50%);
 }
 
+.can-rgx-v h3 {
+  font-weight: normal;
+  color: var(--blue-highlight);
+}
+
 .can-rgx-v h1 {
   padding: 0;
   

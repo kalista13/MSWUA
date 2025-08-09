@@ -16,14 +16,15 @@ export function ProjectPage () {
       <div id="projects">
         <h1>Built By Us</h1>
         <p>Completed Projects</p>
+
         <div className="can-rgx-v">
-          <p>2021-22</p>
+          <h3>2021-22</h3>
           <h1>CAN-RGX V</h1>
           <p>The beginning of our journey</p>
           <button>learn more</button>
         </div>
-        <div className="line-section">
 
+        <div className="line-section">
           <motion.div {...lineMovement} className="h-line line-1"></motion.div>
 
           <img className="checkpoint-1" src={checkpoint} alt="check point icon" />
