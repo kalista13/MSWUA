@@ -6,11 +6,22 @@ import { ProjectPage } from './pages/projectpage/ProjectPage.tsx';
 import { Footer } from './components/Footer.tsx';
 import { Routes, Route } from 'react-router';
 import LogoImage from './assets/images/mswua-logo.svg';
+import {useEffect} from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const ScrollToTop: React.FC = () => {
+    const { pathname } = useLocation();
 
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant"})
+    }, [pathname]);
+
+    return null;
+  };
   return (
     <>
+      <ScrollToTop />
       <link rel="icon" type="image/svg+xml" href={LogoImage} />
       <Header/>
       <Routes>

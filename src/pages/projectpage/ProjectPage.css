@@ -1,18 +1,66 @@
 #projects {
   width: 100vw;
-  min-height: 1900px;
+  min-height: 2210px;
   background-color: black;
   padding-top: 70px;
   background: linear-gradient(var(--project-glow)3%, var(--bg-color) 50%, var(--bg-color) 82%, var(--project-glow) 100%);
+  position: relative;
 }
 
-#projects h1 {
+.projects-grid {
+  display: grid;
+  margin-top: 140px;
+  gap: 140px 20px;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  align-items: center;
+}
+
+.projects-grid img {
+  width: 400px;
+  height: auto;
+  margin-left: 100px;
+}
+
+.can-text {
+  margin-left: 50%;
+  width: 380px;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+.can-text h2 {
+  font-size: 50px;
+  font-family: 'Lexend Giga', Arial;
+}
+
+.can-text .project-text {
+  padding-bottom: 25px;
+  padding-left: 5px;
+}
+
+.can-text h3 {
+  font-weight: normal;
+  color: var(--blue-highlight);
+  font-family: 'Inter', Arial;
+  padding-left: 5px;
+}
+
+.can-text button {
+  background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-3));
+  border-radius: 50px;;
+}
+
+.projects-grid .can-rgx-v .project-title {
+  padding: 0px;
+}
+
+#projects > h1 {
   padding-top: 100px;
   font-family: 'Lexend Giga', Arial;
 }
 
-#projects p {
-  padding-top: 7px;
+#projects > p {
+  padding-top: 15px;
   padding-bottom: 50px;
 }
 
@@ -21,6 +69,7 @@
   background-color: var(--highlight-color);
   width: 1px;
   margin: 0 auto;
+  transform-origin: top;
 }
 
 .line-1 {
@@ -28,30 +77,31 @@
 }
 
 .line-2 {
-  background-color: blue;
   height: 450px;
 }
 
 .line-3 {
-  background-color: purple;
   height: 450px;
 }
 
 .line-4 {
-  background-color: lightblue;
-  height: 350px;
+  height: 450px;
 }
 
 .line-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .checkpoint-1,
 .checkpoint-2,
-.checkpoint-3 {
+.checkpoint-3,
+.checkpoint-4 {
   position: absolute;
   width: 70px;
   height: auto;
@@ -67,4 +117,8 @@
 
 .checkpoint-3 {
   top: 1180px;
+}
+
+.checkpoint-4 {
+  top: 1630px;
 }
