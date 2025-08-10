@@ -17,11 +17,44 @@ export function ProjectPage () {
         <h1>Built By Us</h1>
         <p>Completed Projects</p>
 
-        <div className="can-rgx-v">
-          <h3>2021-22</h3>
-          <h1>CAN-RGX V</h1>
-          <p>The beginning of our journey</p>
-          <button>learn more</button>
+        <div className="projects-grid">
+          <div className="can-text">
+            <h3>2021-22</h3>
+            <h2 className="project-title">CAN-RGX V</h2>
+            <p className="project-text">The beginning of our journey</p>
+            <button>learn more</button>
+          </div>
+          <div className="can-text">
+            <h3>2021-22</h3>
+            <h2 className="project-title">CAN-RGX V</h2>
+            <p className="project-text">The beginning of our journey</p>
+            <button>learn more</button>
+          </div>
+          <div className="can-text">
+            <h3>2021-22</h3>
+            <h2 className="project-title">CAN-ARX I</h2>
+            <p> className="project-text"The second milestone</p>
+            <button>learn more</button>
+          </div>
+          <div className="can-text">
+            <h3>2021-22</h3>
+            <h2 className="project-title">CAN-RGX V</h2>
+            <p className="project-text">The beginning of our journey</p>
+            <button>learn more</button>
+          </div>
+          <div className="can-text">
+            <h3>2021-22</h3>
+            <h2 className="project-title">CAN-RGX V</h2>
+            <p className="project-text">The beginning of our journey</p>
+            <button>learn more</button>
+          </div>
+          <div className="can-text">
+            <h3>2021-22</h3>
+            <h2>CAN-SBX</h2>
+            <p className="project-text">Another chapter</p>
+            <button>learn more</button>
+          </div>
+
         </div>
 
         <div className="line-section">
