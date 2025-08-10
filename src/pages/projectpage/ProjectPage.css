@@ -1,6 +1,6 @@
 #projects {
   width: 100vw;
-  min-height: 1900px;
+  min-height: 2210px;
   background-color: black;
   padding-top: 70px;
   background: linear-gradient(var(--project-glow)3%, var(--bg-color) 50%, var(--bg-color) 82%, var(--project-glow) 100%);
@@ -10,8 +10,15 @@
 .projects-grid {
   display: grid;
   margin-top: 140px;
-  gap: 135px 20px;
+  gap: 140px 20px;
   grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  align-items: center;
+}
+
+.projects-grid img {
+  width: 400px;
+  height: auto;
+  margin-left: 100px;
 }
 
 .can-text {
@@ -20,7 +27,6 @@
   transform: translateX(-50%);
   text-align: left;
 }
-
 
 .can-text h2 {
   font-size: 50px;
@@ -68,22 +74,18 @@
 
 .line-1 {
   height: 300px;
-  background-color: blue;
 }
 
 .line-2 {
   height: 450px;
-  background-color: purple;
 }
 
 .line-3 {
   height: 450px;
-  background-color: lightcoral;
 }
 
 .line-4 {
-  background-color: lightblue;
-  height: 350px;
+  height: 450px;
 }
 
 .line-section {
@@ -98,7 +100,8 @@
 
 .checkpoint-1,
 .checkpoint-2,
-.checkpoint-3 {
+.checkpoint-3,
+.checkpoint-4 {
   position: absolute;
   width: 70px;
   height: auto;
@@ -114,4 +117,8 @@
 
 .checkpoint-3 {
   top: 1180px;
+}
+
+.checkpoint-4 {
+  top: 1630px;
 }

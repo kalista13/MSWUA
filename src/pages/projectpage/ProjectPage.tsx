@@ -1,15 +1,13 @@
 import './ProjectPage.css';
 import checkpoint from '../../assets/images/icons/checkpoint-icon.png';
 import { motion } from "framer-motion";
+import canRgxImage from "../../assets/images/photos/can-rgx.png";
+import canArxImage from "../../assets/images/photos/can-arx.png";
+import canSbxImage from "../../assets/images/photos/can-sbx.png";
+import FadeTextDiv from '../../animations/fade-text-div';
+import { fade, fadeBlurUp, lineMovement } from "../../animations/animations.tsx";
 
 export function ProjectPage () {
-
-  const lineMovement = {
-    initial: {scaleY: 0},
-    whileInView: {scaleY: 1},
-    transition: { duration: 0.8},
-    viewport: { once: true, amount: 0.6, margin: "-10% 0px -10% 0px"},
-  }
 
   return (
     <>
@@ -18,43 +16,38 @@ export function ProjectPage () {
         <p>Completed Projects</p>
 
         <div className="projects-grid">
-          <div className="can-text">
-            <h3>2021-22</h3>
-            <h2 className="project-title">CAN-RGX V</h2>
-            <p className="project-text">The beginning of our journey</p>
-            <button>learn more</button>
-          </div>
-          <div className="can-text">
-            <h3>2021-22</h3>
-            <h2 className="project-title">CAN-RGX V</h2>
-            <p className="project-text">The beginning of our journey</p>
-            <button>learn more</button>
-          </div>
-          <div className="can-text">
-            <h3>2021-22</h3>
-            <h2 className="project-title">CAN-ARX I</h2>
-            <p> className="project-text"The second milestone</p>
-            <button>learn more</button>
-          </div>
-          <div className="can-text">
-            <h3>2021-22</h3>
-            <h2 className="project-title">CAN-RGX V</h2>
-            <p className="project-text">The beginning of our journey</p>
-            <button>learn more</button>
-          </div>
-          <div className="can-text">
-            <h3>2021-22</h3>
-            <h2 className="project-title">CAN-RGX V</h2>
-            <p className="project-text">The beginning of our journey</p>
-            <button>learn more</button>
-          </div>
-          <div className="can-text">
-            <h3>2021-22</h3>
-            <h2>CAN-SBX</h2>
-            <p className="project-text">Another chapter</p>
-            <button>learn more</button>
-          </div>
 
+          <motion.img {...fadeBlurUp} src={canRgxImage} alt="can-rgx image" />
+          <FadeTextDiv className="can-text">
+            <motion.h3 variants={fade}>2021-22</motion.h3>
+            <motion.h2 variants={fade}className="project-title">CAN-RGX V</motion.h2>
+            <motion.p variants={fade} className="project-text">The beginning of our journey</motion.p>
+            <motion.button variants={fade}>learn more</motion.button>
+          </FadeTextDiv>
+
+          <FadeTextDiv className="can-text">
+            <motion.h3 variants={fade}>2021-22</motion.h3>
+            <motion.h2 variants={fade} className="project-title">CAN-ARX I</motion.h2>
+            <motion.p variants={fade} className="project-text"> The second milestone</motion.p>
+            <motion.button variants={fade}>learn more</motion.button>
+          </FadeTextDiv>
+
+          <motion.img {...fadeBlurUp}  src={canArxImage} alt="can-rgx image" />
+
+          <motion.img {...fadeBlurUp}  src={canSbxImage} alt="can-rgx image" />
+          <FadeTextDiv className="can-text">
+            <motion.h3 variants={fade}>2021-22</motion.h3>
+            <motion.h2 variants={fade}>CAN-SBX</motion.h2>
+            <motion.p variants={fade} className="project-text">Another chapter</motion.p>
+            <motion.button>learn more</motion.button>
+          </FadeTextDiv>
+
+          <FadeTextDiv className="can-text">
+            <motion.h3 variants={fade}>2021-22</motion.h3>
+            <motion.h2 variants={fade}className="project-title">CAN-RGX VIII</motion.h2>
+            <motion.p variants={fade} className="project-text">Current Project</motion.p>
+            <motion.button variants={fade}>learn more</motion.button>
+          </FadeTextDiv>
         </div>
 
         <div className="line-section">
@@ -77,9 +70,11 @@ export function ProjectPage () {
           <img className="checkpoint-3" src={checkpoint} alt="check point icon" />
           
           <motion.div {...lineMovement}  
-            transition={{ ...lineMovement.transition, delay: 0.5 }}
+            transition={{ ...lineMovement.transition, delay: 1 }}
             className="h-line line-4">
           </motion.div>
+
+          <img className="checkpoint-4" src={checkpoint} alt="check point icon" />
         </div>
       </div>
     </>
