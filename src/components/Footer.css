@@ -1,7 +1,7 @@
 footer {
   width: 100vw;
   height: fit-content;
-  background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-2), var(--header-gradient-3));
+  background: linear-gradient(to right, var(--main-gradient-1), var(--main-gradient-2), var(--main-gradient-3));
   padding: 20px 0px 5px 0px;
 }
 
