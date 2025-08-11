@@ -6,6 +6,7 @@ import canArxImage from "../../assets/images/photos/can-arx.png";
 import canSbxImage from "../../assets/images/photos/can-sbx.png";
 import FadeTextDiv from '../../animations/fade-text-div';
 import { fade, fadeBlurUp, lineMovement } from "../../animations/animations.tsx";
+import { Link } from 'react-router-dom';
 
 export function ProjectPage () {
 
@@ -22,7 +23,8 @@ export function ProjectPage () {
             <motion.h3 variants={fade}>2021-22</motion.h3>
             <motion.h2 variants={fade}className="project-title">CAN-RGX V</motion.h2>
             <motion.p variants={fade} className="project-text">The beginning of our journey</motion.p>
-            <motion.button variants={fade}>learn more</motion.button>
+
+            <Link to="/projects/project-about"><motion.button variants={fade}>learn more</motion.button></Link>
           </FadeTextDiv>
 
           <FadeTextDiv className="can-text">
@@ -39,7 +41,7 @@ export function ProjectPage () {
             <motion.h3 variants={fade}>2021-22</motion.h3>
             <motion.h2 variants={fade}>CAN-SBX</motion.h2>
             <motion.p variants={fade} className="project-text">Another chapter</motion.p>
-            <motion.button>learn more</motion.button>
+            <motion.button variants={fade}>learn more</motion.button>
           </FadeTextDiv>
 
           <FadeTextDiv className="can-text">
