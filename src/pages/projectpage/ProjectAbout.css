@@ -17,6 +17,8 @@
   font-family: 'Inter', Arial;
   font-size: 1rem;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 #can-project .date {
@@ -33,9 +35,10 @@
   position: absolute;
   z-index: 1;
   background-color: var(--black-overlay);
-  top: 555px;
-  height: 950px;
+  top: 490px;
+  height: 1000px;
   width: 100vw;
+  pointer-events: none;
 }
 
 .img-section {
@@ -47,12 +50,21 @@
 .img-section > img {
   position: absolute;
   z-index: 0;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
 }
 
 .img-1 {
   top: 350px;
   left: 50%;
   transform: translateX(calc(-50% + -320px));
+}
+
+.img-section .is-active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 2;
 }
 
 .img-2 {
