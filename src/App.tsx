@@ -10,6 +10,7 @@ import {useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import { ProjectAbout } from './pages/projectpage/ProjectAbout.tsx';
 import { AboutPage } from './pages/aboutpage/AboutPage.tsx';
+import { WipPage } from './pages/wippage/WipPage.tsx';
 
 function App() {
   const ScrollToTop: React.FC = () => {
@@ -31,7 +32,7 @@ function App() {
         <Route path="/projects" element={<ProjectPage/>}/>
         <Route path="/projects/:slug" element={<ProjectAbout/>}/>
         <Route path="/about" element={<AboutPage/>}/>
-        <Route path="/" element={<AboutPage/>}/>
+        <Route path="/wip" element={<WipPage/>}/>
       </Routes>
       <Footer/>
     </>

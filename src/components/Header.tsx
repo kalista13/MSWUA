@@ -11,10 +11,10 @@ export function Header() {
           <ul className="header-text">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#current-project">Current Project</a></li>
+            <li><Link to="/wip">Team</Link></li>
+            <li><Link to="/wip">Current Project</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li><a href="#outreach">Outreach</a></li>
+            <li><Link to="/wip">Outreach</Link></li>
           </ul>
         </nav>
         <img src={LogoImage} alt="logo image" className="logo" />
