@@ -9,6 +9,7 @@ import LogoImage from './assets/images/mswua-logo.svg';
 import {useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import { ProjectAbout } from './pages/projectpage/ProjectAbout.tsx';
+import { AboutPage } from './pages/aboutpage/AboutPage.tsx';
 
 function App() {
   const ScrollToTop: React.FC = () => {
@@ -29,6 +30,8 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/projects" element={<ProjectPage/>}/>
         <Route path="/projects/:slug" element={<ProjectAbout/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/" element={<AboutPage/>}/>
       </Routes>
       <Footer/>
     </>

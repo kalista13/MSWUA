@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 1610px;
+  height: 1630px;
   background: linear-gradient(var(--project-glow)3%, var(--bg-color) 30%, var(--bg-color) 92%, var(--project-glow) 100%);
 }
 
@@ -35,8 +35,8 @@
   position: absolute;
   z-index: 1;
   background-color: var(--black-overlay);
-  top: 490px;
-  height: 1000px;
+  top: 450px;
+  height: 1050px;
   width: 100vw;
   pointer-events: none;
 }

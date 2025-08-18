@@ -18,12 +18,12 @@ import canARxIImg5 from "../assets/images/photos/can-arx-i/can-arx-i-img-5.png";
 import canArxIImg6 from "../assets/images/photos/can-arx-i/can-arx-i-img-6.png";
 
 // Can SBX Images
-import canSbxImg1 from "../assets/images/photos/can-sbx/can-sbx-img-1.png";
-import canSbxImg2 from "../assets/images/photos/can-sbx/can-sbx-img-2.png";
-import canSbxImg3 from "../assets/images/photos/can-sbx/can-sbx-img-3.png";
-import canSbxImg4 from "../assets/images/photos/can-sbx/can-sbx-img-4.png";
-import canSbxImg5 from "../assets/images/photos/can-sbx/can-sbx-img-5.png";
-import canSbxImg6 from "../assets/images/photos/can-sbx/can-sbx-img-6.png";
+import canSbxVIImg1 from "../assets/images/photos/can-sbx/can-sbx-img-1.png";
+import canSbxVIImg2 from "../assets/images/photos/can-sbx/can-sbx-img-2.png";
+import canSbxVIImg3 from "../assets/images/photos/can-sbx/can-sbx-img-3.png";
+import canSbxVIImg4 from "../assets/images/photos/can-sbx/can-sbx-img-4.png";
+import canSbxVIImg5 from "../assets/images/photos/can-sbx/can-sbx-img-5.png";
+import canSbxVIImg6 from "../assets/images/photos/can-sbx/can-sbx-img-6.png";
 
 export type ImgItem = { id: string; src: string; alt: string; class: string};
 
@@ -63,18 +63,18 @@ export const projects: Record<string, {
       { id: "6", src: canArxIImg6, alt: "Image 6", class: "img-6" },
     ],
   },
-  "can-sbx": {
+  "can-sbx-vi": {
     title: "CAN-SBX",
     date: "2023-24",
     tagline: "A New Frontier",
     text: `As part of the Canadian Stratospheric Balloon Experiment Design Challenge (CAN-SBX VI), MSW’s subteam, AtmoTech, developed the Compact and Deployable Solar Array System. The system was designed to maximize power generation in the stratosphere, enhancing energy collection for space applications. The primary goal was to enhance energy generation efficiency by testing in the stratosphere, measuring power output, and extrapolating solar irradiation at different altitudes.`,
     images: [
-      { id: "1", src: canSbxImg1, alt: "Image 1", class: "img-1" },
-      { id: "2", src: canSbxImg2, alt: "Image 2", class: "img-2" },
-      { id: "3", src: canSbxImg3, alt: "Image 3", class: "img-3" },
-      { id: "4", src: canSbxImg4, alt: "Image 4", class: "img-4" },
-      { id: "5", src: canSbxImg5, alt: "Image 5", class: "img-5" },
-      { id: "6", src: canSbxImg6, alt: "Image 6", class: "img-6" },
+      { id: "1", src: canSbxVIImg1, alt: "Image 1", class: "img-1" },
+      { id: "2", src: canSbxVIImg2, alt: "Image 2", class: "img-2" },
+      { id: "3", src: canSbxVIImg3, alt: "Image 3", class: "img-3" },
+      { id: "4", src: canSbxVIImg4, alt: "Image 4", class: "img-4" },
+      { id: "5", src: canSbxVIImg5, alt: "Image 5", class: "img-5" },
+      { id: "6", src: canSbxVIImg6, alt: "Image 6", class: "img-6" },
     ],
   },
 };

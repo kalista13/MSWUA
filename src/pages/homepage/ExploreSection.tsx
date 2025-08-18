@@ -3,15 +3,9 @@ import TeamPicture from '../../assets/images/photos/team-image.png';
 import ProjectPicture from '../../assets/images/photos/project-image.png';
 import OutreachPicture from '../../assets/images/photos/outreach-image.png';
 import { motion } from "framer-motion";
+import { fadeUp } from '../../animations/animations';
 
 export function ExploreSection() {
-
-  const fadeUp = {
-    initial: { opacity: 0, y: 100},
-    whileInView: {opacity: 1, y: 0},
-    transition: { duration: 0.8},
-    viewport: {once: true, amount: 0.6},
-  }
 
   return (
     <>
