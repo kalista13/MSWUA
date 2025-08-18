@@ -4,7 +4,7 @@ export function AboutPage() {
   return (
     <>
       <section id="about-section">
-        <h1>The Story Behind Our Mission</h1>
+        <h1>Our Purpose</h1>
         <h2>Who we are and why it matters</h2>
         <p>
           Mission SpaceWalker is an interdisciplinary team of young women dedicated to advancing space research and increasing diversity in the aerospace and STEM industries, at the University of Alberta. Our projects blend engineering, science, and environmental research with a commitment to equity and innovation.

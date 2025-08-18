@@ -9,6 +9,16 @@
    background: linear-gradient(var(--project-glow)3%, var(--bg-color) 30%, var(--bg-color) 92%, var(--project-glow) 100%);
 }
 
+#about-section h1 {
+  font-family: "Lexend Giga", Arial;
+  color: var(--blue-highlight);
+}
+
+#about-section h2 {
+  font-weight: normal;
+  font-size: 1.2rem
+}
+
 #about-section p {
   margin-top: 50px;
   width: clamp(500px, 80vw, 1000px);
