@@ -1,7 +1,10 @@
 :root {
   --header-gradient-1: #090732;
-  --header-gradient-2: #272377;
-  --header-gradient-3: #270D2E;
+  --header-gradient-2: #131139;
+  --header-gradient-3: #17081C;
+  --main-gradient-1: #05040F;
+  --main-gradient-2: #131139;
+  --main-gradient-3: #17081C;
   --bg-gradient-1: #07002000;
   --bg-gradient-2: #0F002ECC;
   --bg-gradient-3: #0F002EE6;
@@ -19,4 +22,5 @@
   --explore-highlight: #100E42;
   --sponsor-section-color: #00020799;
   --project-glow: #020F2A;
+  --black-overlay: #000000cc;
 }

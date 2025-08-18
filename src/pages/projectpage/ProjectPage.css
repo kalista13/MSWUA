@@ -1,7 +1,6 @@
 #projects {
   width: 100vw;
   min-height: 2210px;
-  background-color: black;
   padding-top: 70px;
   background: linear-gradient(var(--project-glow)3%, var(--bg-color) 50%, var(--bg-color) 82%, var(--project-glow) 100%);
   position: relative;
