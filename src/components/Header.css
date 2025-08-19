@@ -2,15 +2,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 70px;
-  /*background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-2), var(--header-gradient-3));*/
-  /*opacity: 80%;*/
+  transition: background-color 0.3s ease;
   z-index: 2;
+}
+
+header.opaque {
+  background-color: rgba(14, 1, 49, 0.876); /*scroll*/
 }
 
 header img {
@@ -29,13 +32,12 @@ ul {
 
 a {
   color: var(--highlight-color);
-  /*font-family: 'Italiana', Arial;*/
 }
 
 .logo {
-  top: 3%;
-  width: clamp(30px, 6vw, 100px);
-  height: clamp(30px, 6vw, 100px);
+
+  width: clamp(20px, 5vw, 60px);
+  height: auto;
 }
 
 .header-text li a {
