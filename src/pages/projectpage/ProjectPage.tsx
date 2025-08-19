@@ -48,7 +48,7 @@ export function ProjectPage () {
             <motion.h3 variants={fade}>2024-Present</motion.h3>
             <motion.h2 variants={fade}className="project-title">CAN-RGX VIII</motion.h2>
             <motion.p variants={fade} className="project-text">Current Project</motion.p>
-            <motion.button variants={fade}>learn more</motion.button>
+            <Link to="/projects/can-rgx-viii"><motion.button variants={fade}>learn more</motion.button></Link>
           </FadeTextDiv>
         </div>
 
