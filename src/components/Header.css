@@ -36,7 +36,6 @@ a {
 }
 
 .logo {
-
   width: clamp(20px, 5vw, 60px);
   height: auto;
 }
