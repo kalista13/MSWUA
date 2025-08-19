@@ -1,7 +1,7 @@
 import './ExploreSection.css';
-import TeamPicture from '../../assets/images/photos/team-image.png';
-import ProjectPicture from '../../assets/images/photos/project-image.png';
-import OutreachPicture from '../../assets/images/photos/outreach-image.png';
+import TeamPicture from '../../assets/images/photos/explore/team-image.png';
+import ProjectPicture from '../../assets/images/photos/explore/project-image.png';
+import OutreachPicture from '../../assets/images/photos/explore/outreach-image.png';
 import { motion } from "framer-motion";
 import { fadeUp } from '../../animations/animations';
 import { Link } from 'react-router-dom';

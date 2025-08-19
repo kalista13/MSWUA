@@ -1,19 +1,19 @@
-import Crysta from "../../../assets/images/team/2024-2025/Crysta.png";
-import Ashley from "../../../assets/images/team/2024-2025/Ashley.png";
-import Hope from "../../../assets/images/team/2024-2025/Hope.png";
-import Kalista from "../../../assets/images/team/2024-2025/Kalista.png";
-import Ayesha from "../../../assets/images/team/2024-2025/Ayesha.jpeg";
-import Angela from "../../../assets/images/team/2024-2025/Angela.png";
-import NoPic from "../../../assets/images/background/bg-about.svg";
-import Rosebud from "../../../assets/images/team/2024-2025/Rosebud.png";
-import Surabhi from "../../../assets/images/team/2024-2025/Surabhi.png";
-import Resha from "../../../assets/images/team/2024-2025/Resha.png";
-import Harshita from "../../../assets/images/team/2024-2025/Harshita.png";
-import QJ from "../../../assets/images/team/2024-2025/QJ.png";
-import Emma from "../../../assets/images/team/2024-2025/Emma.png";
-import Jessica from "../../../assets/images/team/2024-2025/Jessica.png";
-import Anjola from "../../../assets/images/team/2024-2025/Anjola.png";
-import Nina from "../../../assets/images/team/2024-2025/Nina.png";
+import Crysta from "../../../assets/images/team/2024-2025/exec/Crysta.png";
+import Ashley from "../../../assets/images/team/2024-2025/mechanical/Ashley.png";
+import QJ from "../../../assets/images/team/2024-2025/mechanical/QJ.png";
+import Hope from "../../../assets/images/team/2024-2025/electrical/Hope.png";
+import Kalista from "../../../assets/images/team/2024-2025/software/Kalista.png";
+import Ayesha from "../../../assets/images/team/2024-2025/software/Ayesha.jpeg";
+import Angela from "../../../assets/images/team/2024-2025/software/Angela.png";
+import Resha from "../../../assets/images/team/2024-2025/software/Resha.png";
+import Harshita from "../../../assets/images/team/2024-2025/software/Harshita.png";
+import Rosebud from "../../../assets/images/team/2024-2025/science/Rosebud.png";
+import Surabhi from "../../../assets/images/team/2024-2025/science/Surabhi.png";
+import Emma from "../../../assets/images/team/2024-2025/science/Emma.png";
+import Jessica from "../../../assets/images/team/2024-2025/science/Jessica.png";
+import Anjola from "../../../assets/images/team/2024-2025/science/Anjola.png";
+import Nina from "../../../assets/images/team/2024-2025/science/Nina.png";
+import NoPic from "../../../assets/images/background/explore-backgorund.png";
 
 export interface TeamMember {
   name: string;
@@ -45,6 +45,14 @@ export const teamMembers: TeamMember[] = [
     name: "QJ",
     role: "Mechanical",
     image: QJ,
+    website: "",
+    linkedin: "",
+    details: "",
+  },
+  {
+    name: "Edana",
+    role: "Mechanical",
+    image: NoPic,
     website: "",
     linkedin: "",
     details: "",
