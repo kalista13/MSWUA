@@ -13,7 +13,8 @@ header {
 }
 
 header.opaque {
-  background-color: rgba(14, 1, 49, 0.876); /*scroll*/
+  /*background-color: rgb(14, 1, 49); /*scroll*/
+  background: linear-gradient(to right, var(--main-gradient-1), var(--main-gradient-2), var(--main-gradient-3));
 }
 
 header img {
