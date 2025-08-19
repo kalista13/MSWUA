@@ -58,7 +58,6 @@
   display: flex;
   gap: 40px;
   margin-top: 30px;
-  
 }
 
 .info {
@@ -78,7 +77,11 @@
 
 .join-button {
   background: linear-gradient(to right, var(--highlight-gradient-1), var(--highlight-gradient-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .about-button {
   border-color: var(--highlight-color);

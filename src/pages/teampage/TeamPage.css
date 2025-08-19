@@ -1,6 +1,6 @@
 #team-section {
   width: 100vw;
-  height: 2000px;
+  height: 2500px;
   background-color: black;
 }
 
@@ -31,4 +31,22 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-bottom: 100px;
 }
+
+.team-info-box {
+  background-image: url(../../assets/images/background/bg-team.png);
+  width: 336px;
+  height: 452px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.team-info {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  place-items: center;
+  row-gap: 80px;
+  column-gap: 10px;
+}
+
