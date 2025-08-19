@@ -1,5 +1,6 @@
 import './AboutSection.css';
 import { useState, useEffect } from "react";
+/*import {SponsorSection} from "./SponsorSection";*/
 import {motion} from "framer-motion";
 import {fadeUp} from '../../animations/animations';
 import img1 from "../../assets/images/aboutus/photo1.png";
@@ -9,11 +10,11 @@ import img4 from "../../assets/images/aboutus/photo4.png";
 
 
 export function AboutSection() {
-  // Array of images for the slideshow
+  // images for the slideshow
   const images = [img1, img2, img3, img4];
   const [current, setCurrent] = useState(0);
 
-  // Change image every 3 seconds
+  // 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
