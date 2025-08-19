@@ -1,7 +1,13 @@
 #team-section {
   width: 100vw;
-  height: 2500px;
-  background-color: black;
+  min-height: fit-content;
+  padding-bottom: 100px;
+  background: linear-gradient(var(--bg-color) 24%, var(--team-gradient-blue), var(--bg-color), var(--team-gradient-blue)); /* Temporary Gradient, replace once sections are in place */
+}
+
+#team-section > img {
+  width: 100vw;
+  height: auto;
 }
 
 .date-section {
@@ -35,9 +41,13 @@
 }
 
 .team-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(8px, 1vh, 80px);
   background-image: url(../../assets/images/background/bg-team.png);
-  width: 336px;
-  height: 452px;
+  width: clamp(220px, 20vw, 300px);
+  aspect-ratio: 336 / 452;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -47,6 +57,47 @@
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   place-items: center;
   row-gap: 80px;
-  column-gap: 10px;
+  column-gap: 5px;
 }
 
+.team-info-box {
+  position: relative;
+}
+
+.team-info-box > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.member-name {
+  font-family: "Lexend Giga", Arial;
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+}
+
+.member-role {
+  font-family: "Nunito Sans", Arial;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+
+.member-line {
+  width: 73%;
+  height: 1.5px;
+  background-color: var(--highlight-color);
+}
+
+.team-link-icons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
+
+.team-link-icons img {
+  width: clamp(16px, 1.3vw, 24px);
+  height: auto;
+}

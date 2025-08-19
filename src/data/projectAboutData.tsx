@@ -25,6 +25,14 @@ import canSbxVIImg4 from "../assets/images/photos/can-sbx/can-sbx-img-4.png";
 import canSbxVIImg5 from "../assets/images/photos/can-sbx/can-sbx-img-5.png";
 import canSbxVIImg6 from "../assets/images/photos/can-sbx/can-sbx-img-6.png";
 
+// Can RGX VIII Images
+import canRgxVIIImg1 from "../assets/images/photos/can-rgx-viii/can-rgx-viii-img-1.png";
+import canRgxVIIImg2 from "../assets/images/photos/can-rgx-viii/can-rgx-viii-img-2.png";
+import canRgxVIIImg3 from "../assets/images/photos/can-rgx-viii/can-rgx-viii-img-3.png";
+import canRgxVIIImg4 from "../assets/images/photos/can-rgx-viii/can-rgx-viii-img-4.png";
+import canRgxVIIImg5 from "../assets/images/photos/can-rgx-viii/can-rgx-viii-img-5.png";
+import canRgxVIIImg6 from "../assets/images/photos/can-rgx-viii/can-rgx-viii-img-6.png";
+
 export type ImgItem = { id: string; src: string; alt: string; class: string};
 
 export const projects: Record<string, {
@@ -75,6 +83,20 @@ export const projects: Record<string, {
       { id: "4", src: canSbxVIImg4, alt: "Image 4", class: "img-4" },
       { id: "5", src: canSbxVIImg5, alt: "Image 5", class: "img-5" },
       { id: "6", src: canSbxVIImg6, alt: "Image 6", class: "img-6" },
+    ],
+  },
+  "can-rgx-viii": {
+    title: "CAN-SBX",
+    date: "2024-Present",
+    tagline: "A New Frontier",
+    text: `TMSW’s CAN-RGX VIII project focuses on studying how cyanobacteria behaves under microgravity using a custom-built bioreactor. This innovative initiative aims to explore the potential of these microorganisms for oxygen production and waste recycling in space environments. The bioreactor is designed to monitor cyanobacteria growth, metabolism, and adaptability precisely. By understanding their behavior in microgravity, MSW hopes to contribute to advancements in sustainable life support systems for long-term space missions.`,
+    images: [
+      { id: "1", src: canRgxVIIImg1, alt: "Image 1", class: "img-1" },
+      { id: "2", src: canRgxVIIImg2, alt: "Image 2", class: "img-2" },
+      { id: "3", src: canRgxVIIImg3, alt: "Image 3", class: "img-3" },
+      { id: "4", src: canRgxVIIImg4, alt: "Image 4", class: "img-4" },
+      { id: "5", src: canRgxVIIImg5, alt: "Image 5", class: "img-5" },
+      { id: "6", src: canRgxVIIImg6, alt: "Image 6", class: "img-6" },
     ],
   },
 };
