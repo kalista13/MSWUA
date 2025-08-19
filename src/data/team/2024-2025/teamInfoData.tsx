@@ -78,7 +78,7 @@ export const teamMembers: TeamMember[] = [
     role: "Software",
     image: Angela,
     website: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/angela-dakay-b6365a244/",
     details: "",
   },
   {

@@ -54,7 +54,11 @@
   column-gap: 5px;
 }
 
-.team-info img {
+.team-info-box {
+  position: relative;
+}
+
+.team-info-box > img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -76,4 +80,17 @@
   width: 73%;
   height: 1.5px;
   background-color: var(--highlight-color);
+}
+
+.team-link-icons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
+
+.team-link-icons img {
+  width: clamp(16px, 1.3vw, 24px);
+  height: auto;
 }
