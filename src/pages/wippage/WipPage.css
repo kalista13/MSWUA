@@ -1,6 +1,6 @@
 #wip {
   width: 100vw;
-  height: 800px;
+  height: 100vh;
   padding-top: 50px;
   overflow-y: hidden;
   background-color: var(--bg-color);

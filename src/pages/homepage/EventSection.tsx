@@ -25,7 +25,7 @@ export function EventSection() {
             <h1 className="header">CAN-RGX VIII 25’</h1>
             <p className= "date">November</p>
             <p className="event-description">Join us for our can rgx! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
-            <button className="rvsp-button">l e a r n  m o r e </button>
+            <button className="rvsp-button">l e a r n &nbsp; m o r e </button>
             <img src={EventBoxes} alt="event box" draggable="false" />
           </div>
         </div>

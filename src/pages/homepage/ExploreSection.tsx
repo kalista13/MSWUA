@@ -10,7 +10,7 @@ export function ExploreSection() {
   return (
     <>
       <section id="explore">
-        <h1> Explore More </h1>
+        <h1> E X P L O R E &nbsp; &nbsp; M O R E </h1>
         <motion.div {...fadeUp} className="team-section">
           <img src={TeamPicture} alt="team picture" />
           <button className="team-button">meet the team</button>
