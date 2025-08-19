@@ -12,6 +12,7 @@ import { ProjectAbout } from './pages/projectpage/components/ProjectAbout.tsx';
 import { AboutPage } from './pages/aboutpage/AboutPage.tsx';
 import { WipPage } from './pages/wippage/WipPage.tsx';
 import { TeamPage } from './pages/teampage/TeamPage.tsx';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage.tsx';
 
 function App() {
   const ScrollToTop: React.FC = () => {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/wip" element={<WipPage/>}/>
         <Route path="/team" element={<TeamPage/>}/>
+        <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>
     </>
