@@ -1,6 +1,7 @@
 import './LandingSection.css';
 import spaceVideo from '../../assets/videos/mainvideo.mp4';
 import sideimage from '../../assets/images/sideimage.png';
+import { Link } from 'react-router-dom';
 
 
 export function LandingSection() {
@@ -25,8 +26,8 @@ export function LandingSection() {
             <p>A University of Alberta Space Exploration & Research Team</p>
           </div>
           <div className="buttons">
-            <button className="join-button">Join Us</button>
-            <button className="about-button">Our Mission</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFngJP9f9xXPBy2yOw5_cGnOaIvemSZ39k2S_oF6PB1Kywpw/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="join-button">Join Us</a>
+            <Link to="/about"><button className="about-button">Our Mission</button></Link>
           </div>
         </div>
         <img src={sideimage} alt="Spacecraft" className="side-image" /> 

@@ -27,7 +27,7 @@ export function Header() {
           <ul className="header-text">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/wip">Team</Link></li>
+            <li><Link to="/team">Team</Link></li>
             <li><Link to="/wip">Current Project</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/wip">Outreach</Link></li>
