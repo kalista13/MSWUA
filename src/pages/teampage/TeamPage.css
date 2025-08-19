@@ -1,7 +1,13 @@
 #team-section {
   width: 100vw;
-  height: 3700px;
+  min-height: fit-content;
+  padding-bottom: 100px;
   background: linear-gradient(var(--bg-color) 24%, var(--team-gradient-blue), var(--bg-color), var(--team-gradient-blue)); /* Temporary Gradient, replace once sections are in place */
+}
+
+#team-section > img {
+  width: 100vw;
+  height: auto;
 }
 
 .date-section {
@@ -63,7 +69,8 @@
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 23px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .member-name {
