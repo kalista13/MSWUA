@@ -1,12 +1,12 @@
-import './AboutSection.css';
+import '../styles/AboutSection.css';
 import { useState, useEffect } from "react";
 /*import {SponsorSection} from "./SponsorSection";*/
 import {motion} from "framer-motion";
-import {fadeUp} from '../../animations/animations';
-import img1 from "../../assets/images/aboutus/photo1.png";
-import img2 from "../../assets/images/aboutus/photo2.png";
-import img3 from "../../assets/images/aboutus/photo3.png";
-import img4 from "../../assets/images/aboutus/photo4.png";
+import {fadeUp} from '../../../animations/animations';
+import img1 from "../../../assets/images/aboutus/photo1.png";
+import img2 from "../../../assets/images/aboutus/photo2.png";
+import img3 from "../../../assets/images/aboutus/photo3.png";
+import img4 from "../../../assets/images/aboutus/photo4.png";
 
 
 export function AboutSection() {

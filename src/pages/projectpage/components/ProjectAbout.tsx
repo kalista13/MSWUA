@@ -1,7 +1,7 @@
-import './ProjectAbout.css';
+import '../styles/ProjectAbout.css';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { projects } from '../../data/projectAboutData';
+import { projects } from '../../../data/projectAboutData';
 
 export function ProjectAbout() {
   const [activeId, setActiveId] = useState<string | null>(null);

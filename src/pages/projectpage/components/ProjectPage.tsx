@@ -1,11 +1,11 @@
-import './ProjectPage.css';
-import checkpoint from '../../assets/images/icons/checkpoint-icon.png';
+import '../styles/ProjectPage.css';
+import checkpoint from '../../../assets/images/icons/checkpoint-icon.png';
 import { motion } from "framer-motion";
-import canRgxImage from "../../assets/images/photos/projects/can-rgx.png";
-import canArxImage from "../../assets/images/photos/projects/can-arx.png";
-import canSbxImage from "../../assets/images/photos/projects/can-sbx.png";
-import FadeTextDiv from '../../animations/fade-text-div';
-import { fade, fadeBlurUp, lineMovement } from "../../animations/animations.tsx";
+import canRgxImage from "../../../assets/images/photos/projects/can-rgx.png";
+import canArxImage from "../../../assets/images/photos/projects/can-arx.png";
+import canSbxImage from "../../../assets/images/photos/projects/can-sbx.png";
+import FadeTextDiv from '../../../animations/fade-text-div.tsx';
+import { fade, fadeBlurUp, lineMovement } from "../../../animations/animations.tsx";
 import { Link } from 'react-router-dom';
 
 export function ProjectPage () {

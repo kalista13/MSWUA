@@ -1,6 +1,6 @@
-import './LandingSection.css';
-import spaceVideo from '../../assets/videos/mainvideo.mp4';
-import sideimage from '../../assets/images/sideimage.png';
+import '../styles/LandingSection.css';
+import spaceVideo from '../../../assets/videos/mainvideo.mp4';
+import sideimage from '../../../assets/images/sideimage.png';
 import { Link } from 'react-router-dom';
 
 

@@ -1,5 +1,5 @@
-import './EventSection.css';
-import EventBoxes from '../../assets/images/event-boxes.png';
+import '../styles/EventSection.css';
+import EventBoxes from '../../../assets/images/event-boxes.png';
 
 export function EventSection() {
   return (

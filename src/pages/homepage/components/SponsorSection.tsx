@@ -1,13 +1,13 @@
-import './SponsorSection.css';
-import sponsor1 from '../../assets/images/sponsors/sponsor-engineer.svg';
-import sponsor2 from '../../assets/images/sponsors/sponsor-sed-eeds.svg';
-import sponsor3 from '../../assets/images/sponsors/sponsor-ap!rg.svg';
-import sponsor4 from '../../assets/images/sponsors/sponsor-rockaboo.svg';
-import sponsor5 from '../../assets/images/sponsors/sponsor-nat.svg';
-import sponsor6 from '../../assets/images/sponsors/sponsor-wisest.svg';
-import sponsor7 from '../../assets/images/sponsors/sponsor-solid-works.svg';
-import sponsor8 from '../../assets/images/sponsors/sponsor-telus.svg';
-import sponsor9 from '../../assets/images/sponsors/sponsors-uofa.svg';
+import '../styles/SponsorSection.css';
+import sponsor1 from '../../../assets/images/sponsors/sponsor-engineer.svg';
+import sponsor2 from '../../../assets/images/sponsors/sponsor-sed-eeds.svg';
+import sponsor3 from '../../../assets/images/sponsors/sponsor-ap!rg.svg';
+import sponsor4 from '../../../assets/images/sponsors/sponsor-rockaboo.svg';
+import sponsor5 from '../../../assets/images/sponsors/sponsor-nat.svg';
+import sponsor6 from '../../../assets/images/sponsors/sponsor-wisest.svg';
+import sponsor7 from '../../../assets/images/sponsors/sponsor-solid-works.svg';
+import sponsor8 from '../../../assets/images/sponsors/sponsor-telus.svg';
+import sponsor9 from '../../../assets/images/sponsors/sponsors-uofa.svg';
 
 export function SponsorSection() {
   return (

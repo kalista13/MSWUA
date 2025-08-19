@@ -1,14 +1,14 @@
 import './App.css';
 import './Theme.css';
 import { Header } from './components/Header.tsx';
-import { HomePage } from './pages/homepage/HomePage.tsx';
-import { ProjectPage } from './pages/projectpage/ProjectPage.tsx';
+import { HomePage } from './pages/homepage/components/HomePage.tsx';
+import { ProjectPage } from './pages/projectpage/components/ProjectPage.tsx';
 import { Footer } from './components/Footer.tsx';
 import { Routes, Route } from 'react-router';
 import LogoImage from './assets/images/mswua-logo.svg';
 import {useEffect} from "react";
 import { useLocation } from "react-router-dom";
-import { ProjectAbout } from './pages/projectpage/ProjectAbout.tsx';
+import { ProjectAbout } from './pages/projectpage/components/ProjectAbout.tsx';
 import { AboutPage } from './pages/aboutpage/AboutPage.tsx';
 import { WipPage } from './pages/wippage/WipPage.tsx';
 import { TeamPage } from './pages/teampage/TeamPage.tsx';

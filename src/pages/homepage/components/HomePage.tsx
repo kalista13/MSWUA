@@ -1,4 +1,3 @@
-import './HomePage.css';
 import { LandingSection } from './LandingSection';
 import { AboutSection } from './AboutSection';
 import { EventSection } from './EventSection';
