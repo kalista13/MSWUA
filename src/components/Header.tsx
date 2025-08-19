@@ -1,12 +1,28 @@
 import './Header.css';
 import '../Theme.css';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
 import LogoImage from "../assets/images/mswua-logo.svg";
 
 export function Header() {
+
+  const [opaque, setOpaque] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) { // change 50 to how far you want before it becomes opaque
+        setOpaque(true);
+      } else {
+        setOpaque(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header>
+      <header className={opaque ? "opaque" : ""}>
         <nav>
           <ul className="header-text">
             <li><Link to="/">Home</Link></li>
