@@ -1,0 +1,80 @@
+#about-us {
+  position: relative;
+  width: 100vw;
+  height: 140vh;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 650px;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  background: var(--bg-color);
+  background-size: cover;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  max-width: 1400px;
+  height: 100%;
+  position: relative;
+}
+
+.about-header {
+  color: var(--blue-highlight);
+  font-size: 2 rem;
+  text-align: left;
+  font-weight: 300;
+}
+
+.text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 45%;
+  max-height: 50vw;
+}
+
+.about-header {
+  color: var(--blue-highlight);
+  /*font-family: 'Italiana', Arial;*/
+  font-size: 4rem;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  text-align: left;
+  width: 100%;
+}
+
+.image-holder {
+  
+  flex: 0 0 50%; /* a bit wider */
+  aspect-ratio: 4 / 3; /* match frame's aspect ratio */
+ /* min-width: 330px;
+  max-height: 515px; 
+  margin-left: 5px;*/
+  display: flex;
+  /*justify-content: center;
+  align-items: center;*/
+}
+
+.slideshow-image {
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: clamp(300px, 40%, 600px);
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  /*z-index: 5;*/
+  transition: opacity 0.5s ease-in-out;
+}

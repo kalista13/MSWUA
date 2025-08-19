@@ -1,5 +1,5 @@
 import "./TeamPage.css";
-import TeamPhoto from "../../assets/images/photos/team-photo.png";
+import TeamPhoto from "../../assets/images/team/team-photo.png";
 import LinkedinIcon from "../../assets/images/icons/linkedin-icon.png";
 import WebLinkIcon from "../../assets/images/icons/web-link-icon.png";
 import { teamMembers } from "../../data/team/2024-2025/teamInfoData";

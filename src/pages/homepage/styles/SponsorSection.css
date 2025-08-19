@@ -1,0 +1,74 @@
+.sponsor-text {
+  position: absolute;
+  font-size: 1.5rem;
+  top: clamp(10px, 5vh, 100px);
+}
+
+.sponsor-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(var(--sponsor-section-color) 25%, var(--blue-highlight) 50%, var(--sponsor-section-color) 75%);
+  width: 100vw;
+  height: clamp(350px, 45vh, 450px);
+  flex-wrap: nowrap;
+}
+
+.line {
+  width: 8rem;
+  height: 2px;
+  background-color: var(--highlight-color);
+}
+
+.sponsors {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.sponsor-track {
+  display: flex;
+  gap: clamp(30px, 8vw, 100px);
+  animation: scroll 30s linear infinite;
+}
+
+.sponsors img {
+  width: clamp(100px, 20vw, 240px);
+  height: clamp(100px, 20vh, 250px);
+  flex-shrink: 0;
+}
+
+.sponsor-track .nat-sponsor {
+  width: 170px;
+  height: auto;
+}
+
+.sponsor-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translateX(-51%);
+  }
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Italiana', Arial;
+}
+
+.sponsor-track .engineer-sponsor {
+  width: 120px;
+  height: auto;
+}
+
+.sponsor-track .wisest-sponsor {
+  width: 110px;
+  height: auto;
+}
