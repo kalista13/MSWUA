@@ -1,6 +1,6 @@
 #team-section {
   width: 100vw;
-  height: 2500px;
+  height: 3800px;
   background-color: black;
 }
 
@@ -47,6 +47,12 @@
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   place-items: center;
   row-gap: 80px;
-  column-gap: 10px;
+  column-gap: 5px;
 }
 
+.team-info img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}

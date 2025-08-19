@@ -1,6 +1,7 @@
 import "./TeamPage.css";
 import TeamPhoto from "../../assets/images/photos/team-photo.png";
-
+import { teamMembers } from "../../data/team/2024-2025/teamInfoData";
+import type { TeamMember } from "../../data/team/2024-2025/teamInfoData";
 export function TeamPage() {
   return (
     <>
@@ -17,24 +18,14 @@ export function TeamPage() {
         </div>
 
         <div className="team-info">
-          <div className="team-info-box">
-            
-          </div>
+          {teamMembers.map((member: TeamMember, i: number) => (
+            <div className="team-info-box">
+              <img key={i} src={member.image} alt={`team member ${i + 1}`}></img>
+              <p>{member.name}</p>
+              <p>{member.role}</p>
+            </div>
+          ))}
 
-          <div className="team-info-box">
-          </div>
-
-          <div className="team-info-box">
-          </div>
-
-          <div className="team-info-box">
-          </div>
-
-          <div className="team-info-box">
-          </div>
-          
-          <div className="team-info-box">
-          </div>
         </div>
       </section>
     </>
