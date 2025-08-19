@@ -60,13 +60,6 @@
   transform: translateX(calc(-50% + -320px));
 }
 
-.img-section .is-active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  z-index: 2;
-}
-
 .img-2 {
   top: 450px;
   left: 50%;
@@ -95,4 +88,11 @@
   top: 50px;
   left: 50%;
   transform: translateX(calc(-50% + 230px)) rotate(8deg);
+}
+
+.img-section .is-active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%) rotate(0deg) !important;
+  z-index: 2;
 }
