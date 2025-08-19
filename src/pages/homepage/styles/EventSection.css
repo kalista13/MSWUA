@@ -31,7 +31,7 @@
   align-items: center;
   gap: 5px;
   width: clamp(100px, 30vw, 427px);
-  height: clamp(100px, 25vw, 420px);
+  height: clamp(100px, 28vw, 420px);
   overflow: auto;
 }
 
@@ -54,13 +54,17 @@
   text-align: left;
   font-size: clamp(0.99rem, 0.5vw, 2rem);
   width: 300px;
-  height: 200px;
+  height: auto;
 }
 
 .event-boxes h1,
 .event-boxes p,
 .event-boxes button {
   z-index: 1;
+}
+
+.event-boxes button {
+  margin-top: 10px;
 }
 
 .info-button,

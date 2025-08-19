@@ -59,12 +59,22 @@
   font-family: 'Italiana', Arial;
   width: fit-content;
   margin-bottom: 17px;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.5px;
 }
 
 .team-button:hover,
 .explore-button:hover,
 .involve-button:hover {
   border-color: var(--blue-highlight);
+  background: linear-gradient(
+    to right,
+    var(--main-gradient-1),
+    var(--main-gradient-2),
+    var(--main-gradient-3)
+  );
+  box-shadow: 0 0 10px rgba(120, 82, 255, 0.7);
+  transform: translateY(-2px);
 }
 
 .auto-show {
