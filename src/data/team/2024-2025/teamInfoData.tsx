@@ -4,6 +4,7 @@ import Hope from "../../../assets/images/team/2024-2025/Hope.png";
 import Kalista from "../../../assets/images/team/2024-2025/Kalista.png";
 import Ayesha from "../../../assets/images/team/2024-2025/Ayesha.jpeg";
 import Angela from "../../../assets/images/team/2024-2025/Angela.png";
+import NoPic from "../../../assets/images/background/bg-about.svg";
 import Rosebud from "../../../assets/images/team/2024-2025/Rosebud.png";
 import Surabhi from "../../../assets/images/team/2024-2025/Surabhi.png";
 import Resha from "../../../assets/images/team/2024-2025/Resha.png";
@@ -81,6 +82,14 @@ export const teamMembers: TeamMember[] = [
     details: "",
   },
   {
+    name: "Yemi",
+    role: "Software",
+    image: NoPic,
+    website: "",
+    linkedin: "",
+    details: "",
+  },
+  {
     name: "Resha",
     role: "Software",
     image: Resha,
@@ -138,7 +147,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Anjola",
-    role: "Member",
+    role: "Science",
     image: Anjola,
     website: "",
     linkedin: "",

@@ -21,7 +21,8 @@ export function TeamPage() {
           {teamMembers.map((member: TeamMember, i: number) => (
             <div className="team-info-box">
               <img key={i} src={member.image} alt={`team member ${i + 1}`}></img>
-              <p>{member.name}</p>
+              <p className="member-name">{member.name}</p>
+              <div className="member-line"></div>
               <p>{member.role}</p>
             </div>
           ))}

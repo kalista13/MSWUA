@@ -1,7 +1,7 @@
 #team-section {
   width: 100vw;
-  height: 3800px;
-  background-color: black;
+  height: 3700px;
+  background: linear-gradient(var(--bg-color) 24%, var(--team-gradient-blue), var(--bg-color), var(--team-gradient-blue)); /* Temporary Gradient, replace once sections are in place */
 }
 
 .date-section {
@@ -35,9 +35,13 @@
 }
 
 .team-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(8px, 1vh, 80px);
   background-image: url(../../assets/images/background/bg-team.png);
-  width: 336px;
-  height: 452px;
+  width: clamp(220px, 20vw, 300px);
+  aspect-ratio: 336 / 452;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -55,4 +59,21 @@
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  margin-top: 23px;
+}
+
+.member-name {
+  font-family: "Lexend Giga", Arial;
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+}
+
+.member-role {
+  font-family: "Nunito Sans", Arial;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+
+.member-line {
+  width: 73%;
+  height: 1.5px;
+  background-color: var(--highlight-color);
 }
