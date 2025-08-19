@@ -5,9 +5,10 @@
   gap: clamp(10px, 15vh, 60px);
   padding: 20px 0 30px 0;
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   background-color: var(--bg-color);
   box-sizing: border-box;
+  padding-top: 100px;
 }
 
 .event-box-section {
@@ -16,15 +17,13 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  
 }
 
 .header,
 .date{
   color: var(--blue-highlight);
-  padding: 10px 0;
+  padding: 10px;
 }
-
 
 .event-boxes {
   display: flex;
@@ -53,6 +52,7 @@
 
 .event-boxes .event-description {
   text-align: left;
+  font-size: clamp(0.99rem, 0.5vw, 2rem);
   width: 300px;
   height: 200px;
 }
@@ -62,7 +62,6 @@
 .event-boxes button {
   z-index: 1;
 }
-
 
 .info-button,
 .rvsp-button {

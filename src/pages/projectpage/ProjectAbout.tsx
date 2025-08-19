@@ -7,7 +7,6 @@ export function ProjectAbout() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const { slug } = useParams<{ slug: string }>();
 
-  console.log("params", slug)
   const project = slug ? projects[slug] : null;
 
   if (!project) return <p> Project not found </p>
@@ -16,7 +15,7 @@ export function ProjectAbout() {
 
   return (
     <>
-      <section id="can-project">
+      <section id="can-project" onClick={() => setActiveId(null)}>
         <h1>{title}</h1>
         <p className="date">{date}</p>
         <p>{tagline}</p>
@@ -24,12 +23,15 @@ export function ProjectAbout() {
 
         <div className="img-section">
           {images.map((img) => (
-            <img 
-              key={img.id} 
-              src={img.src} 
-              alt={img.alt} 
+            <img
+              key={img.id}
+              src={img.src}
+              alt={img.alt}
               className={`${img.class} ${activeId === img.id ? "is-active" : ""}`}
-              onClick={() => setActiveId(activeId === img.id ? null : img.id)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveId(activeId === img.id ? null : img.id);
+              }}
             />
           ))}
         </div>

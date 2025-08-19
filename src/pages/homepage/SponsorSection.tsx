@@ -1,3 +1,4 @@
+import './SponsorSection.css';
 import sponsor1 from '../../assets/images/sponsors/sponsor-engineer.svg';
 import sponsor2 from '../../assets/images/sponsors/sponsor-sed-eeds.svg';
 import sponsor3 from '../../assets/images/sponsors/sponsor-ap!rg.svg';

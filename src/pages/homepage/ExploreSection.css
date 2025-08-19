@@ -5,8 +5,9 @@
   align-items: center;
   gap: clamp(10px, 5vw, 50px);
   width: 100vw;
+  height: 600px;
   padding: 30px 0;
-  min-height: 60vh;
+  min-height: 70vh;
   background: linear-gradient(var(--bg-color) 0%, var(--explore-highlight) 67%, var(--bg-color) 100%);
   flex-wrap: wrap;
 }
@@ -14,7 +15,7 @@
 #explore h1 {
   position: absolute;
   top: 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 .team-section, 
@@ -26,7 +27,7 @@
   align-items: center;
   gap: 25px;
   position: relative;
-  width: 350px;
+  width: 385px;
   height: 385px;
 }
 
@@ -46,6 +47,7 @@
 .involve-section img {
   width: 83%;
   height: 55%;
+  margin-right: 2px;
 }
 
 .team-button,
