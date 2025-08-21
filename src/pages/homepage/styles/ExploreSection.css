@@ -56,7 +56,7 @@
   background: transparent;
   border: 1px solid var(--highlight-color);
   border-radius: 4px;
-  font-family: 'Italiana', Arial;
+  font-family: 'inter', Arial;
   width: fit-content;
   margin-bottom: 17px;
   transition: all 0.2s ease-in-out;

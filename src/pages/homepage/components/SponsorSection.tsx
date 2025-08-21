@@ -14,7 +14,7 @@ export function SponsorSection() {
     <>
       <div className="sponsor-section">
         <div className="sponsor-text">
-          <p>Sponsors</p>
+          <p>Sponsors and Partners</p>
           <div className="line"></div>
         </div>
         <div aria-hidden="true" className="sponsors">

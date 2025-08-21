@@ -17,7 +17,7 @@
 }
 
 .line {
-  width: 8rem;
+  width: 15rem;
   height: 2px;
   background-color: var(--highlight-color);
 }

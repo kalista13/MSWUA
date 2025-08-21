@@ -89,7 +89,7 @@ export const projects: Record<string, {
     title: "CAN-RGX-VIII",
     date: "2024-Present",
     tagline: "A New Frontier",
-    text: `TMSW’s CAN-RGX VIII project focuses on studying how cyanobacteria behaves under microgravity using a custom-built bioreactor. This innovative initiative aims to explore the potential of these microorganisms for oxygen production and waste recycling in space environments. The bioreactor is designed to monitor cyanobacteria growth, metabolism, and adaptability precisely. By understanding their behavior in microgravity, MSW hopes to contribute to advancements in sustainable life support systems for long-term space missions.`,
+    text: `MSW’s CAN-RGX VIII project focuses on studying how cyanobacteria behaves under microgravity using a custom-built bioreactor. This innovative initiative aims to explore the potential of these microorganisms for oxygen production and waste recycling in space environments. The bioreactor is designed to monitor cyanobacteria growth, metabolism, and adaptability precisely. By understanding their behavior in microgravity, MSW hopes to contribute to advancements in sustainable life support systems for long-term space missions.`,
     images: [
       { id: "1", src: canRgxVIIImg1, alt: "Image 1", class: "img-1" },
       { id: "2", src: canRgxVIIImg2, alt: "Image 2", class: "img-2" },

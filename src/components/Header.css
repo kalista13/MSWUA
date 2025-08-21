@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   position: fixed;
@@ -9,7 +9,7 @@ header {
   width: 100vw;
   height: 70px;
   transition: background-color 0.3s ease;
-  z-index: 2;
+  z-index: 20;
 }
 
 header.opaque {
@@ -18,8 +18,7 @@ header.opaque {
 }
 
 header img {
-  position: absolute;
-  left: 30px;
+  position: relative;
 }
 
 ul {
@@ -28,7 +27,7 @@ ul {
   margin: 0;
   display: flex;
   gap: 60px;
-  margin-right: 40px;
+  margin-right: 70px;
 }
 
 a {

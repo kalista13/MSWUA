@@ -36,6 +36,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/wip" element={<WipPage/>}/>
         <Route path="/team" element={<TeamPage/>}/>
+        <Route path="/current-project/:slug" element={<ProjectAbout/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>

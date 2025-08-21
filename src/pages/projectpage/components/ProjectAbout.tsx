@@ -20,7 +20,8 @@ export function ProjectAbout() {
         <p className="date">{date}</p>
         <p>{tagline}</p>
         <p className="can-project-text">{text}</p>
-
+        <div className="helper-text">tap to view</div>
+        
         <div className="img-section">
           {images.map((img) => (
             <img
