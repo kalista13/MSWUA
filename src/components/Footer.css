@@ -55,3 +55,32 @@ footer span {
   width: 100vw;
   height: 2px;
 }
+
+
+/* Medium-small devices */
+@media (max-width: 600px) {
+  footer span {
+    font-size: 0.6rem;
+  }
+  
+  .footer-info {
+    justify-content: center;
+  }
+
+  .follow-section > p {
+    font-size: 12px;
+  }
+
+  .location-section {
+    display: none;
+  }
+
+  footer > p {
+    font-size: 12px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 992px){
+  
+}
