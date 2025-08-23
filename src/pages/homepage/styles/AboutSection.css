@@ -118,23 +118,3 @@
     width: 255px;
   }
 }
-
-/* Small laptops */
-@media (max-width: 992px) {
-}
-
-/* Laptops */
-@media (max-width: 1200px) {
-}
-
-/* Large desktops */
-@media (max-width: 1440px) {
-}
-
-/* Extra large desktops */
-@media (max-width: 1600px) {
-}
-
-/* Ultra wide */
-@media (max-width: 1920px) {
-}
