@@ -6,13 +6,13 @@
   gap: clamp(10px, 5vw, 50px);
   width: 100vw;
   height: 600px;
+  min-height: fit-content;
   padding: 30px 0;
-  min-height: 70vh;
   background: linear-gradient(var(--bg-color) 0%, var(--explore-highlight) 67%, var(--bg-color) 100%);
   flex-wrap: wrap;
 }
 
-#explore h1 {
+#explore > h1 {
   position: absolute;
   top: 0;
   font-size: 2.5rem;
@@ -91,4 +91,19 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Medium-small devices */
+@media (max-width: 600px) {
+  #explore {
+    height: 0px;
+  }
+
+  #explore > h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 992px) {
 }
