@@ -83,12 +83,18 @@ a {
   }
 
   ul {
-    gap: 10xpx;
+    gap: 10px;
     flex-wrap: wrap;
     font-size: 12px;
     padding: 0;
     margin: 0;
     gap: 1rem;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  ul {
+    gap: 35px;
   }
 }
