@@ -14,7 +14,7 @@ export function AboutPage() {
         <h2 className ="about-h2">Who we are and why it matters</h2>
 
         <div className="about-boxes-section">
-          <div className="about-box">
+          <div className="about-box box-1">
             <FadeTextDiv className="about-box-text">
               <motion.h2 variants={fade}>Who we are</motion.h2>
               <motion.h3 variants={fade}>
@@ -22,9 +22,9 @@ export function AboutPage() {
               </motion.h3>
             </FadeTextDiv>
           </div>
-          <img src={Logo} alt="logo" />
-          <img src={CanRgxVImage} alt="Can RGX V Image" />
-          <div className="about-box">
+          <img className="about-img-1" src={Logo} alt="logo" />
+          <img className="about-img-2" src={CanRgxVImage} alt="Can RGX V Image" />
+          <div className="about-box box-2">
             <FadeTextDiv className="about-box-text">
               <motion.h2 variants={fade}>What we've done</motion.h2>
               <motion.h3 variants={fade}>
@@ -32,7 +32,7 @@ export function AboutPage() {
               </motion.h3>
             </FadeTextDiv>
           </div>
-          <div className="about-box">
+          <div className="about-box box-3">
             <FadeTextDiv className="about-box-text">
               <motion.h2 variants={fade}>What we're working on</motion.h2>
               <motion.h3 variants={fade}>
@@ -40,7 +40,7 @@ export function AboutPage() {
               </motion.h3>
             </FadeTextDiv>
           </div>
-          <img src={example1} alt="Can RGX V Image" />
+          <img className="about-img-3" src={example1} alt="Can RGX V Image" />
         </div>
 
         <h1 className="matters-text">Why it matters</h1>

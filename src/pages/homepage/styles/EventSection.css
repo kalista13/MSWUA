@@ -75,7 +75,7 @@
   background: linear-gradient(to right, var(--highlight-gradient-1-opaque), var(--highlight-gradient-2-opaque));
   border: 1px solid var(--highlight-color);
   border-radius: 4px;
-  font-family: 'Italiana', Arial;
+  font-family: 'Inter', Arial;
   width: fit-content;
 }
 

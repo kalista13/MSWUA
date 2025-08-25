@@ -70,7 +70,7 @@
   padding-top: 80px;
   font-size: 2rem;
   text-align: left;
-  font-family: 'Inknut Antiqua', Arial;
+  font-family: 'Lexend Giga', Arial;
   color: var(--blue-highlight);
 }
 
@@ -94,4 +94,48 @@
 .matters-text {
   font-size: 2rem;
   margin-top: 150px;
+}
+
+/* Medium-small devices */
+@media (max-width: 600px) {
+  #about-section > h1 {
+    font-size: 2.2rem;
+  }
+
+  #about-section > h2 {
+    font-size: 1rem;
+  }
+
+  .about-boxes-section {
+    grid-template: repeat(6, 1fr) / 1fr;
+  }
+
+  .box-1 {
+    order: 1;
+  }
+
+  .about-img-1 {
+    order: 2;
+  }
+
+  .box-2 {
+    order: 3;
+  }
+
+  .about-img-2 {
+    order: 4;
+  }
+
+  .box-3 {
+    order: 5;
+  }
+
+  .about-img-3 {
+    order: 6;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 992px){
+
 }
