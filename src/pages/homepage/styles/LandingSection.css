@@ -8,6 +8,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-color);
+  position: relative;
 }
 
 #home, 
@@ -82,7 +83,6 @@
   justify-content: center;
 }
 
-
 .about-button {
   border-color: var(--highlight-color);
   background-color: transparent;
@@ -129,4 +129,69 @@
   bottom: 8%; /* adjust vertical position */
   width: 120px; /* adjust size */
   max-width: 30%;
+}
+
+/* Medium-small devices */
+@media (max-width: 600px) {
+  #home {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons {
+    gap: 20px;
+  }
+
+  .join-button,
+  .about-button {
+    font-size: 12px;
+    width: 105px;
+  }
+
+  .mainline {
+    font-size: 30px
+  }
+
+  .subline {
+    font-size: 12px;
+  }
+
+  .subline > p {
+    width: 250px;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  .video-overlay {
+    height: 100vh;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+  .mainline {
+    font-size: 45px
+  }
+
+  .subline {
+    font-size: 13px;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  .join-button,
+  .about-button {
+    width: 135px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .join-button,
+  .about-button {
+    width: 135px;
+  }
 }

@@ -13,7 +13,6 @@ export function LandingSection() {
         Your browser does not support the video tag.
       </video>
 
-      {/* um what */}
       <div className="video-overlay" />
 
       <div className="bg-overlay">

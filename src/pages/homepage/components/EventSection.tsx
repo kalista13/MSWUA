@@ -18,7 +18,7 @@ export function EventSection() {
           </motion.div>
           <motion.div {...fadeUp} className="event-boxes">
             <h1 className="header">AGM '25</h1>
-            <p className= "date">TBA</p>
+            <p className= "date">SEPT 27</p>
             <p className="event-description">Join us for our biggest meeting of the year! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
             <button className="rvsp-button">r v s p</button>
             <img src={EventBoxes} alt="event box" draggable="false" />

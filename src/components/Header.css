@@ -60,3 +60,41 @@ a {
 .header-text li a:hover::after {
   transform: scaleX(1);
 }
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .logo {
+    padding-right: 20px;
+    margin: 0;
+  }
+
+  ul {
+    gap: 10xpx;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 2rem;
+  }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  header {
+    height: 80px;
+  }
+
+  ul {
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  ul {
+    gap: 35px;
+  }
+}
