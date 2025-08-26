@@ -18,8 +18,8 @@ export function ProjectPage () {
 
         <div className="projects-grid">
 
-          <motion.img {...fadeBlurUp} src={canRgxImage} alt="can-rgx image" />
-          <FadeTextDiv className="can-text">
+          <motion.img {...fadeBlurUp} className="projects-img-1" src={canRgxImage} alt="can-rgx image" />
+          <FadeTextDiv className="can-text projects-1">
             <motion.h3 variants={fade}>2021-22</motion.h3>
             <motion.h2 variants={fade}className="project-title">CAN-RGX V</motion.h2>
             <motion.p variants={fade} className="project-text">The beginning of our journey</motion.p>
@@ -27,24 +27,24 @@ export function ProjectPage () {
             <Link to="/projects/can-rgx-v"><motion.button variants={fade}>learn more</motion.button></Link>
           </FadeTextDiv>
 
-          <FadeTextDiv className="can-text">
+          <FadeTextDiv className="can-text projects-2">
             <motion.h3 variants={fade}>2023-24</motion.h3>
             <motion.h2 variants={fade} className="project-title">CAN-ARX I</motion.h2>
             <motion.p variants={fade} className="project-text"> The second milestone</motion.p>
             <Link to="/projects/can-arx-i"><motion.button variants={fade}>learn more</motion.button></Link>
           </FadeTextDiv>
 
-          <motion.img {...fadeBlurUp}  src={canArxImage} alt="can-rgx image" />
+          <motion.img {...fadeBlurUp} className="projects-img-2" src={canArxImage} alt="can-rgx image" />
 
-          <motion.img {...fadeBlurUp}  src={canSbxImage} alt="can-rgx image" />
-          <FadeTextDiv className="can-text">
+          <motion.img {...fadeBlurUp} className="projects-img-3" src={canSbxImage} alt="can-rgx image" />
+          <FadeTextDiv className="can-text projects-3">
             <motion.h3 variants={fade}>2023-24</motion.h3>
             <motion.h2 variants={fade}>CAN-SBX VI</motion.h2>
             <motion.p variants={fade} className="project-text">A New Frontier</motion.p>
             <Link to="/projects/can-sbx-vi"><motion.button variants={fade}>learn more</motion.button></Link>
           </FadeTextDiv>
 
-          <FadeTextDiv className="can-text">
+          <FadeTextDiv className="can-text projects-4">
             <motion.h3 variants={fade}>2024-Present</motion.h3>
             <motion.h2 variants={fade}className="project-title">CAN-RGX VIII</motion.h2>
             <motion.p variants={fade} className="project-text">Current Project</motion.p>
