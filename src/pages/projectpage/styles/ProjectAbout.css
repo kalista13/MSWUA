@@ -104,3 +104,56 @@
   margin: 10px 0;
   z-index: 4;
 }
+
+/* Medium-small devices */
+@media (max-width: 600px) {
+  #can-project > h1 {
+    font-size: 2.4rem;
+  }
+
+  #can-project .can-project-text {
+    font-size: 1rem;
+    width: 360px;
+  }
+
+  .img-section img {
+    width: 50%;
+  }
+
+  .img-1 {
+    top: 70%;
+    left: 105%;
+  }
+
+  .img-2 {
+    top: 80%;
+    left: 45%;
+    transform: translateX(calc(-50% + -10px)) rotate(20deg);
+  }
+
+  .img-3 {
+    top: 70%;
+    left: -8%;
+  }
+
+  .img-4 {
+    top: 15%;
+    left: 80%;
+  }
+
+  .img-5 {
+    top: 25%;
+    left: 45%;
+    transform: translateX(-50%) rotate(-10deg);
+  }
+
+  .img-6 {
+    top: 12%;
+    left: 15%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 992px){
+  
+}
