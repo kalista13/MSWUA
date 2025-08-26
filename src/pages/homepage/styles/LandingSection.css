@@ -81,6 +81,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  transition: border 0.2s ease-in-out;
+}
+
+.join-button:hover {
+  border: 0.5px var(--highlight-color) solid;
 }
 
 .about-button {
@@ -91,6 +97,7 @@
 .join-button,
 .about-button {
   width: clamp(40px, 10vw, 150px);
+  height: auto;
   border-radius: 4px;
   color: var(--highlight-color);
   font-weight: bold;
