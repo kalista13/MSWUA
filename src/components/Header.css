@@ -12,9 +12,19 @@ header {
   z-index: 20;
 }
 
-header.opaque {
-  /*background-color: rgb(14, 1, 49); /*scroll*/
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: linear-gradient(to right, var(--main-gradient-1), var(--main-gradient-2), var(--main-gradient-3));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+header.opaque::before {
+  /*background-color: rgb(14, 1, 49); /*scroll*/
+  opacity: 1;
 }
 
 header img {
@@ -44,6 +54,11 @@ a {
   display: inline-block;
 }
 
+.header-text li a:hover,
+.header-text li a.active {
+  color: var(--blue-highlight);
+}
+
 .header-text li a::after {
   content: "";
   position: absolute;
@@ -51,10 +66,19 @@ a {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background-color: var(--highlight-color);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--blue-highlight),
+    transparent
+  );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
+}
+
+.header-text li a.active::after {
+  transform: scaleX(1);
 }
 
 .header-text li a:hover::after {

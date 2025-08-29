@@ -1,8 +1,10 @@
 import './Header.css';
 import '../Theme.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import LogoImage from "../assets/images/mswua-logo.svg";
+import { motion } from 'framer-motion';
+import { headerContainer, fadeDown } from '../animations/animations';
 
 export function Header() {
 
@@ -22,19 +24,53 @@ export function Header() {
 
   return (
     <>
-      <header className={opaque ? "opaque" : ""}>
-        <img src={LogoImage} alt="logo image" className="logo" />
+      <motion.header 
+        className={opaque ? "opaque" : ""}
+        variants={headerContainer}
+        initial="hidden"
+        animate="visible">
+        <motion.img variants={fadeDown} src={LogoImage} alt="logo image" className="logo" />
         <nav>
-          <ul className="header-text">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/team">Team</Link></li>
-            <li><Link to="/current-project/can-rgx-viii">Current Project</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/wip">Outreach</Link></li>
-          </ul>
+          <motion.ul className="header-text">
+            <motion.li variants={fadeDown}><NavLink 
+              to="/" 
+              className={({ isActive  }) => isActive ? "active" : ""}>
+                Home
+              </NavLink>
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
+              to="/about" 
+              className={({ isActive  }) => isActive ? "active" : ""}>
+                About
+              </NavLink>
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
+              to="/team" 
+              className={({ isActive  }) => isActive ? "active" : ""}>
+                Team
+              </NavLink>
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
+              to="/current-project/can-rgx-viii"
+              className={({ isActive  }) => isActive ? "active" : ""}
+              >Current Project
+              </NavLink>
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
+              to="/projects"
+              className={({ isActive  }) => isActive ? "active" : ""}
+              >Projects
+              </NavLink>
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
+              to="/wip"
+              className={({ isActive  }) => isActive ? "active" : ""}
+              >Outreach
+              </NavLink>
+            </motion.li>
+          </motion.ul>
         </nav>
-      </header>
+      </motion.header>
     </>
   )
 }
