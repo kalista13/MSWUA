@@ -38,6 +38,13 @@
   position: relative;
 }
 
+.event-boxes a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+}
+
 .event-boxes img {
   width: clamp(100px, 40vw, 427px);
   height: clamp(100px, 40vw, 420px);

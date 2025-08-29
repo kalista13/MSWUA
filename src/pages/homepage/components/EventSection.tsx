@@ -13,7 +13,7 @@ export function EventSection() {
             <h1 className="header">Fall Clubs Fair ‘25</h1>
             <p className= "date">SEPT 1-5</p>
             <p className="event-description">Stop by the Mission SpaceWalker table at the Clubs Fair! Meet our members, learn about the cool projects we’re working on and find out how you can get involved. We’ve got a place for you!</p>
-            <button className="info-button">i n f o</button>
+            <a href="https://www.instagram.com/p/DN63-bDj2YC/" target="_blank" rel="noreferrer noopener"><button className="info-button">i n f o</button></a>
             <img src={EventBoxes} alt="event box" draggable="false" />
           </motion.div>
           <motion.div {...fadeUp} className="event-boxes">
@@ -25,9 +25,9 @@ export function EventSection() {
           </motion.div>
           <motion.div {...fadeBlurUp} className="event-boxes">
             <h1 className="header">CAN-RGX VIII 25’</h1>
-            <p className= "date">November</p>
+            <p className= "date">NOVEMBER</p>
             <p className="event-description">Join us for our can rgx! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
-            <button className="rvsp-button">l e a r n &nbsp; m o r e </button>
+            <a href="https://www.seds.ca/can-rgx/" target="_blank" rel="noreferrer noopener"><button className="rvsp-button">l e a r n &nbsp; m o r e </button></a>
             <img src={EventBoxes} alt="event box" draggable="false" />
           </motion.div>
         </div>

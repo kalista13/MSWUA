@@ -18,7 +18,7 @@ export function LandingSection() {
       <div className="video-overlay" />
 
       <div className="bg-overlay">
-        <motion.div 
+        <motion.div
           className="info"
           variants={container}
           initial="hidden"
@@ -31,11 +31,20 @@ export function LandingSection() {
             <p>A University of Alberta Space Exploration & Research Team</p>
           </motion.div>
           <motion.div className="buttons" variants={landingFade}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFngJP9f9xXPBy2yOw5_cGnOaIvemSZ39k2S_oF6PB1Kywpw/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="join-button">Join Us</a>
+            <button
+              className="join-button"
+              onClick={() => window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSfFngJP9f9xXPBy2yOw5_cGnOaIvemSZ39k2S_oF6PB1Kywpw/viewform?pli=1",
+                "_blank",
+                "noopener,noreferrer"
+              )}
+            >
+              Join Us
+            </button>
             <Link to="/about"><button className="about-button">Our Mission</button></Link>
           </motion.div>
         </motion.div>
-        <img src={sideimage} alt="Spacecraft" className="side-image" /> 
+        <img src={sideimage} alt="Spacecraft" className="side-image" />
       </div>
     </section>
   );
