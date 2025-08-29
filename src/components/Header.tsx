@@ -3,6 +3,8 @@ import '../Theme.css';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import LogoImage from "../assets/images/mswua-logo.svg";
+import { motion } from 'framer-motion';
+import { headerContainer, fadeDown } from '../animations/animations';
 
 export function Header() {
 
@@ -22,49 +24,53 @@ export function Header() {
 
   return (
     <>
-      <header className={opaque ? "opaque" : ""}>
-        <img src={LogoImage} alt="logo image" className="logo" />
+      <motion.header 
+        className={opaque ? "opaque" : ""}
+        variants={headerContainer}
+        initial="hidden"
+        animate="visible">
+        <motion.img variants={fadeDown} src={LogoImage} alt="logo image" className="logo" />
         <nav>
-          <ul className="header-text">
-            <li><NavLink 
+          <motion.ul className="header-text">
+            <motion.li variants={fadeDown}><NavLink 
               to="/" 
               className={({ isActive  }) => isActive ? "active" : ""}>
                 Home
               </NavLink>
-            </li>
-            <li><NavLink 
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
               to="/about" 
               className={({ isActive  }) => isActive ? "active" : ""}>
                 About
               </NavLink>
-            </li>
-            <li><NavLink 
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
               to="/team" 
               className={({ isActive  }) => isActive ? "active" : ""}>
                 Team
               </NavLink>
-            </li>
-            <li><NavLink 
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
               to="/current-project/can-rgx-viii"
               className={({ isActive  }) => isActive ? "active" : ""}
               >Current Project
               </NavLink>
-            </li>
-            <li><NavLink 
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
               to="/projects"
               className={({ isActive  }) => isActive ? "active" : ""}
               >Projects
               </NavLink>
-            </li>
-            <li><NavLink 
+            </motion.li>
+            <motion.li variants={fadeDown}><NavLink 
               to="/wip"
               className={({ isActive  }) => isActive ? "active" : ""}
               >Outreach
               </NavLink>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </nav>
-      </header>
+      </motion.header>
     </>
   )
 }

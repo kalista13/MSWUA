@@ -5,6 +5,35 @@ export const container = {
     visible: { transition: { staggerChildren: 0.08 }}
 }
 
+export const headerContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.35,
+    }
+  }
+};
+
+export const landingContainer = {
+  hidden: {},
+  visible: {
+    transition: { 
+      staggerChildren: 0.18, 
+      delayChildren: 0,
+    }
+  }
+};
+
+export const landingFade : Variants = {
+  hidden: { opacity: 0, y: 100, scale: 0.99 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1, 
+    transition: { duration: 0.45, ease: "easeOut" } }
+};
+
 export const fade : Variants = {
   hidden: { opacity: 0, y: 8, scale: 0.99 },
   visible: { 
@@ -27,6 +56,15 @@ export const fadeUp = {
     transition: { duration: 0.8},
     viewport: {once: true, amount: 0.6},
 }
+
+export const fadeDown : Variants = {
+  hidden: { opacity: 0, y: -100, scale: 0.99 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1, 
+    transition: { duration: 0.45, ease: "easeOut" } }
+};
 
 export const fadeBlurUp = {
   initial: {opacity: 0, y: 10, scale: 0.80, filter: "blur(6px)"},
