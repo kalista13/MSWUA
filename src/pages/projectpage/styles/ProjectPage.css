@@ -223,7 +223,7 @@
 
   .can-text button {
     background: linear-gradient(to right, var(--header-gradient-1), var(--header-gradient-3));
-    border-radius: 50px;;
+    border-radius: 50px;
   }
 
   .projects-grid img {

@@ -74,7 +74,6 @@
   color: var(--blue-highlight);
 }
 
-
 .about-boxes-section {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;

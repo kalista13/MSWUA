@@ -49,10 +49,13 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: var(--highlight-color);
 }
+
 button:hover {
   border-color: var(--header-gradient-3);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
