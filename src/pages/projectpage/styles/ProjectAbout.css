@@ -116,6 +116,10 @@
     width: 360px;
   }
 
+  #can-project .helper-text {
+    font-size: 0.9rem;
+  }
+
   .img-section img {
     width: 50%;
   }
@@ -150,6 +154,30 @@
   .img-6 {
     top: 12%;
     left: 15%;
+  }
+}
+
+@media (max-width: 376px) {
+  #can-project > h1 {
+    font-size: 2.2rem;
+  }
+
+  #can-project .date,
+  #can-project p,
+  #can-project .helper-text {
+    font-size: 0.9rem;
+  }
+
+  #can-project .can-project-text {
+    font-size: 0.9rem;
+    width: 320px;
+  }
+}
+
+@media (max-width: 321px) {
+  #can-project .can-project-text {
+    font-size: 0.9rem;
+    width: 270px;
   }
 }
 
