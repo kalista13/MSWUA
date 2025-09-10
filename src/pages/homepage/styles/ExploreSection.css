@@ -103,23 +103,3 @@
     font-size: 1.8rem;
   }
 }
-
-@media (max-width: 600px) {
-  #explore {
-    height: 0px;
-  }
-
-  #explore > h1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 375px) {
-  #explore {
-    height: 0px;
-  }
-
-  #explore > h1 {
-    font-size: 1.8rem;
-  }
-}
