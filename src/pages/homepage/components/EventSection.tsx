@@ -20,7 +20,7 @@ export function EventSection() {
             <h1 className="header">AGM '25</h1>
             <p className= "date">SEPT 27</p>
             <p className="event-description">Join us for our biggest meeting of the year! We’ll be recapping the year, announcing exciting plans, and opening the floor for new members to join or take on responsibilities. If you've ever wanted to be more involved, this is the time!</p>
-            <button className="rvsp-button">r v s p</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFngJP9f9xXPBy2yOw5_cGnOaIvemSZ39k2S_oF6PB1Kywpw/viewform" target="_blank" rel="noreferrer noopener"><button className="rvsp-button">r v s p</button></a>
             <img src={EventBoxes} alt="event box" draggable="false" />
           </motion.div>
           <motion.div {...fadeBlurUp} className="event-boxes">
