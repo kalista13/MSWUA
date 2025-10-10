@@ -11,13 +11,14 @@ import Rosebud from "../../../assets/images/team/2024-2025/science/Rosebud.png";
 import Surabhi from "../../../assets/images/team/2024-2025/science/Surabhi.png";
 import Emma from "../../../assets/images/team/2024-2025/science/Emma.png";
 import Jessica from "../../../assets/images/team/2024-2025/science/Jessica.png";
-import Anjola from "../../../assets/images/team/2024-2025/science/Anjola.png";
+//import Anjola from "../../../assets/images/team/2024-2025/science/Anjola.png";
 import Nina from "../../../assets/images/team/2024-2025/science/Nina.png";
 import NoPic from "../../../assets/images/background/explore-backgorund.png";
 
 export interface TeamMember {
   name: string;
   role: string;
+  group: string;
   image: string;
   website?: string;
   linkedin?: string;
@@ -28,6 +29,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Crysta",
     role: "President",
+    group: "Execs",
     image: Crysta,
     website: "",
     linkedin: "",
@@ -36,14 +38,16 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Ashley",
     role: "Mechanical",
+    group: "Execs",
     image: Ashley,
     website: "",
     linkedin: "",
     details: "",
   },
   {
-    name: "QJ",
+    name: "Fatema",
     role: "Mechanical",
+    group: "Execs",
     image: QJ,
     website: "",
     linkedin: "",
@@ -52,6 +56,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Edana",
     role: "Mechanical",
+    group: "Mechanical",
     image: NoPic,
     website: "",
     linkedin: "",
@@ -60,6 +65,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Hope",
     role: "Electrical",
+    group: "Execs",
     image: Hope,
     website: "",
     linkedin: "",
@@ -67,7 +73,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Ayesha",
-    role: "Software",
+    role: "Firmware",
+    group: "Execs",
     image: Ayesha,
     website: "",
     linkedin: "",
@@ -76,6 +83,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Kalista",
     role: "Software",
+    group: "Execs",
     image: Kalista,
     website: "",
     linkedin: "",
@@ -84,6 +92,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Angela",
     role: "Software",
+    group: "Software",
     image: Angela,
     website: "",
     linkedin: "https://www.linkedin.com/in/angela-dakay-b6365a244/",
@@ -92,6 +101,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Yemi",
     role: "Software",
+    group: "Software",
     image: NoPic,
     website: "",
     linkedin: "",
@@ -100,6 +110,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Resha",
     role: "Software",
+    group: "Execs",
     image: Resha,
     website: "",
     linkedin: "",
@@ -108,6 +119,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Harshita",
     role: "Software",
+    group: "Software",
     image: Harshita,
     website: "",
     linkedin: "",
@@ -116,6 +128,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Rosebud",
     role: "Science",
+    group: "Science",
     image: Rosebud,
     website: "",
     linkedin: "",
@@ -124,6 +137,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Surabhi",
     role: "Science",
+    group: "Science",
     image: Surabhi,
     website: "",
     linkedin: "",
@@ -132,6 +146,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Emma",
     role: "Science",
+    group: "Science",
     image: Emma,
     website: "",
     linkedin: "",
@@ -140,6 +155,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Jessica",
     role: "Science",
+    group: "Execs",
     image: Jessica,
     website: "",
     linkedin: "",
@@ -148,15 +164,8 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Nina",
     role: "Science",
+    group: "Science",
     image: Nina,
-    website: "",
-    linkedin: "",
-    details: "",
-  },
-  {
-    name: "Anjola",
-    role: "Science",
-    image: Anjola,
     website: "",
     linkedin: "",
     details: "",

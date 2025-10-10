@@ -21,6 +21,19 @@
   background: linear-gradient(var(--bg-color), var(--header-gradient-3), var(--bg-color));
 }
 
+.team-section-block {
+  margin-bottom: 100px;
+}
+
+.team-role-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lexend Giga", Arial;
+  
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 .team-text {
   font-size: 2.4rem;
   font-family: "Lexend Giga", Arial;
@@ -28,7 +41,7 @@
 
 .team-line {
   width: clamp(300px, 30vw, 800px);
-  height: 2px;
+  height: 0.5px;
   background-color: var(--highlight-color);
 }
 
@@ -37,7 +50,8 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
+  color: var(--blue-highlight);
 }
 
 .team-info-box {
@@ -54,10 +68,11 @@
 
 .team-info {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  place-items: center;
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 0px;
   row-gap: 80px;
-  column-gap: 5px;
+  justify-items: center;
+  margin-bottom: 70px;
 }
 
 .team-info-box {
