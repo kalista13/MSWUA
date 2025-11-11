@@ -77,6 +77,7 @@
 
 .team-info-box {
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 
 .team-info-box > img {
@@ -88,9 +89,14 @@
   margin-bottom: 20px;
 }
 
+.team-info-box:hover {
+  transform: scale(1.01);
+}
+
 .member-name {
   font-family: "Lexend Giga", Arial;
-  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
+  max-width: 250px;
 }
 
 .member-role {
